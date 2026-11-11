@@ -1,0 +1,57 @@
+land-cover file (all municipalities, merged on the IBGE code): data/external/mapbiomas_lulc2023_SC_municipal_fractions_all295.csv
+land-cover file: 295 municipalities (of 295); sum of the 5 classes median 0.976
+municipalities in the analysis: 295
+          resposta          cobertura   n     rho      p
+ ev_1225_100km2_yr             forest 295 -0.2502 0.0000
+ ev_1225_100km2_yr          grassland 295  0.1283 0.0275
+ ev_1225_100km2_yr            pasture 295  0.1064 0.0681
+ ev_1225_100km2_yr        agriculture 295  0.1125 0.0536
+ ev_1225_100km2_yr       silviculture 295  0.4154 0.0000
+       ev25_100km2             forest 295 -0.2145 0.0002
+       ev25_100km2          grassland 295  0.2088 0.0003
+       ev25_100km2            pasture 295  0.0243 0.6772
+       ev25_100km2        agriculture 295  0.0587 0.3151
+       ev25_100km2       silviculture 295  0.3948 0.0000
+         mb_pct_yr             forest 295 -0.2515 0.0000
+         mb_pct_yr          grassland 295  0.4390 0.0000
+         mb_pct_yr            pasture 295  0.0055 0.9256
+         mb_pct_yr        agriculture 295 -0.0770 0.1873
+         mb_pct_yr       silviculture 295  0.2531 0.0000
+     CO2_per_event             forest 288  0.5610 0.0000
+     CO2_per_event          grassland 288  0.3871 0.0000
+     CO2_per_event            pasture 288 -0.2923 0.0000
+     CO2_per_event        agriculture 288 -0.6164 0.0000
+     CO2_per_event       silviculture 288  0.6765 0.0000
+     CO2_per_event finn_forest4_share 288  0.8451 0.0000
+area_km2_per_event             forest 288  0.0213 0.7183
+area_km2_per_event          grassland 288  0.3050 0.0000
+area_km2_per_event            pasture 288 -0.1621 0.0058
+area_km2_per_event        agriculture 288 -0.1903 0.0012
+area_km2_per_event       silviculture 288  0.5925 0.0000
+area_km2_per_event finn_forest4_share 288  0.3252 0.0000
+silviculture fraction vs FINN temperate-forest share of the municipal FINN area: rho = 0.53 (p = 2.8e-22; n = 288)
+ev_1225_100km2_yr: 1 municipalities with zero value excluded from the log-linear models: Governador Celso Ramos
+
+ev_1225_100km2_yr | W = knn6 | n = 294: OLS R2 = 0.442; Moran I (OLS residuals) = 0.319 (p = 3.05e-26); SEM lambda = 0.672; Moran I (SEM filtered) = 0.002 (p = 0.441); AIC OLS = 492.4, SEM = 415.9
+   grassland    b = +3.133 (SE 0.484) p = 9.52e-11 | +10 p.p. -> +36.8%
+   pasture      b = +2.122 (SE 0.547) p = 0.000103 | +10 p.p. -> +23.6%
+   agriculture  b = +1.357 (SE 0.268) p = 3.98e-07 | +10 p.p. -> +14.5%
+   silviculture b = +3.006 (SE 0.511) p = 4.14e-09 | +10 p.p. -> +35.1%
+
+ev_1225_100km2_yr | W = queen | n = 294: OLS R2 = 0.442; Moran I (OLS residuals) = 0.360 (p = 2.55e-25); SEM lambda = 0.696; Moran I (SEM filtered) = 0.011 (p = 0.344); AIC OLS = 492.4, SEM = 401.7
+   grassland    b = +3.149 (SE 0.483) p = 7.32e-11 | +10 p.p. -> +37.0%
+   pasture      b = +2.381 (SE 0.536) p = 8.96e-06 | +10 p.p. -> +26.9%
+   agriculture  b = +1.447 (SE 0.267) p = 5.62e-08 | +10 p.p. -> +15.6%
+   silviculture b = +2.949 (SE 0.506) p = 5.65e-09 | +10 p.p. -> +34.3%
+
+CO2_per_event | W = knn6 | n = 288: OLS R2 = 0.622; Moran I (OLS residuals) = 0.211 (p = 1.53e-12); SEM lambda = 0.509; Moran I (SEM filtered) = -0.004 (p = 0.494); AIC OLS = 143.6, SEM = 109.4
+   grassland    b = -0.861 (SE 0.271) p = 0.00152 | +10 p.p. -> -8.2%
+   pasture      b = -1.139 (SE 0.319) p = 0.000357 | +10 p.p. -> -10.8%
+   agriculture  b = -1.155 (SE 0.149) p = 8.16e-15 | +10 p.p. -> -10.9%
+   silviculture b = +2.435 (SE 0.285) p = 1.26e-17 | +10 p.p. -> +27.6%
+
+CO2_per_event | W = queen | n = 288: OLS R2 = 0.622; Moran I (OLS residuals) = 0.213 (p = 4.63e-10); SEM lambda = 0.457; Moran I (SEM filtered) = -0.013 (p = 0.435); AIC OLS = 143.6, SEM = 113.3
+   grassland    b = -0.803 (SE 0.273) p = 0.00323 | +10 p.p. -> -7.7%
+   pasture      b = -1.155 (SE 0.318) p = 0.000287 | +10 p.p. -> -10.9%
+   agriculture  b = -1.180 (SE 0.147) p = 8.98e-16 | +10 p.p. -> -11.1%
+   silviculture b = +2.370 (SE 0.283) p = 5.91e-17 | +10 p.p. -> +26.7%

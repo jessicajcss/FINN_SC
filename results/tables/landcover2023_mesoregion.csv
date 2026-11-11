@@ -1,0 +1,61 @@
+group,mesorregiao,km2,pct_of_group,pct_of_mesoregion
+forest,Grande Florianópolis,4238.1,11.29,59.31
+forest,Norte Catarinense,7716.4,20.56,48.35
+forest,Oeste Catarinense,8167.6,21.76,29.85
+forest,Serrana,7098.3,18.91,31.74
+forest,Sul Catarinense,3317.1,8.84,34.12
+forest,Vale do Itajaí,7001.3,18.65,53.4
+grass,Grande Florianópolis,57.7,1.05,0.81
+grass,Norte Catarinense,38.6,0.7,0.24
+grass,Oeste Catarinense,39.1,0.71,0.14
+grass,Serrana,5357.7,97.19,23.96
+grass,Sul Catarinense,16.2,0.29,0.17
+grass,Vale do Itajaí,3.3,0.06,0.02
+wet,Grande Florianópolis,25.4,11.81,0.36
+wet,Norte Catarinense,55.6,25.82,0.35
+wet,Oeste Catarinense,69.3,32.19,0.25
+wet,Serrana,0.0,0.01,0.0
+wet,Sul Catarinense,64.7,30.05,0.66
+wet,Vale do Itajaí,0.3,0.12,0.0
+silv,Grande Florianópolis,473.4,4.56,6.62
+silv,Norte Catarinense,1885.4,18.17,11.81
+silv,Oeste Catarinense,2882.3,27.78,10.54
+silv,Serrana,3891.6,37.51,17.4
+silv,Sul Catarinense,303.3,2.92,3.12
+silv,Vale do Itajaí,939.9,9.06,7.17
+past,Grande Florianópolis,640.9,7.81,8.97
+past,Norte Catarinense,717.7,8.75,4.5
+past,Oeste Catarinense,3105.8,37.85,11.35
+past,Serrana,1529.7,18.64,6.84
+past,Sul Catarinense,1201.4,14.64,12.36
+past,Vale do Itajaí,1010.1,12.31,7.7
+crop,Grande Florianópolis,119.3,0.97,1.67
+crop,Norte Catarinense,2322.7,18.79,14.55
+crop,Oeste Catarinense,5723.0,46.3,20.92
+crop,Serrana,2042.0,16.52,9.13
+crop,Sul Catarinense,1265.3,10.24,13.01
+crop,Vale do Itajaí,888.0,7.18,6.77
+mosaic,Grande Florianópolis,1027.3,5.93,14.38
+mosaic,Norte Catarinense,2492.1,14.4,15.61
+mosaic,Oeste Catarinense,6570.6,37.96,24.02
+mosaic,Serrana,2008.7,11.61,8.98
+mosaic,Sul Catarinense,2600.1,15.02,26.74
+mosaic,Vale do Itajaí,2610.3,15.08,19.91
+urban,Grande Florianópolis,286.2,12.69,4.0
+urban,Norte Catarinense,443.7,19.67,2.78
+urban,Oeste Catarinense,385.4,17.09,1.41
+urban,Serrana,125.3,5.56,0.56
+urban,Sul Catarinense,468.1,20.76,4.81
+urban,Vale do Itajaí,546.6,24.24,4.17
+nonveg,Grande Florianópolis,29.1,13.2,0.41
+nonveg,Norte Catarinense,19.3,8.77,0.12
+nonveg,Oeste Catarinense,50.8,23.06,0.19
+nonveg,Serrana,12.9,5.87,0.06
+nonveg,Sul Catarinense,91.1,41.33,0.94
+nonveg,Vale do Itajaí,17.1,7.78,0.13
+water,Grande Florianópolis,248.6,14.91,3.48
+water,Norte Catarinense,268.0,16.08,1.68
+water,Oeste Catarinense,363.6,21.81,1.33
+water,Serrana,297.2,17.83,1.33
+water,Sul Catarinense,395.6,23.73,4.07
+water,Vale do Itajaí,94.2,5.65,0.72

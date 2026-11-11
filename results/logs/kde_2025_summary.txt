@@ -1,0 +1,22 @@
+records of 2025 in file: 8581 | inside SC: 8581
+rows: 8581 | detections: 5489 | events: 5160 | rows per event: 1,663
+persistent-anomaly screening (1000 m, >= 16 days): flagged events 39 (0,76%) in Siderópolis | max distinct days around a detection: 37
+events analysed: 5121
+bandwidth selectors (sigma, m): ppl = 2774; CvL = 8758; scott = 21719; diggle = 755
+main sigma: 2774 m (ppl)
+check: integral of the density over SC = 5.121,0 events (n = 5121)
+max density: 52,75 events/100 km2 at lon -50,356, lat -28,288 | state mean of pixels: 5,35 | events/area: 5,35
+sensitivity CvL (sigma 8758 m): Pearson r = 0,826; Spearman rho = 0,803; max = 30,96
+sensitivity scott (sigma 21719 m): Pearson r = 0,697; Spearman rho = 0,640; max = 21,89
+sensitivity diggle (sigma 755 m): Pearson r = 0,627; Spearman rho = 0,869; max = 291,06
+sensitivity fixed_2km (sigma 2000 m): Pearson r = 0,970; Spearman rho = 0,975; max = 79,82
+sensitivity fixed_4km (sigma 4000 m): Pearson r = 0,970; Spearman rho = 0,969; max = 39,72
+sensitivity fixed_8km (sigma 8000 m): Pearson r = 0,841; Spearman rho = 0,823; max = 31,84
+by mesoregion (mean density in events/100 km2; shares of pixels overall, in the top 10% and top 1%):
+                     mean_density share_pixels share_top10 share_top1
+Grande Florianópolis        2.262        0.077       0.011      0.000
+Norte Catarinense           2.965        0.166       0.023      0.000
+Oeste Catarinense           4.600        0.285       0.156      0.064
+Serrana                    10.365        0.233       0.729      0.936
+Sul Catarinense             5.394        0.101       0.057      0.000
+Vale do Itajaí              2.970        0.137       0.024      0.000

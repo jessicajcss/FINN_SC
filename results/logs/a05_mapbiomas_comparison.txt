@@ -1,0 +1,47 @@
+MapBiomas rows 3835; municipalities 295; years 2012-2024; negative values 0
+max fraction of a municipality burned in one year: 5.81% (Bom Jardim da Serra, 2020)
+         finn      mb  ratio
+year                        
+2012  2971.33   78.83  37.69
+2013  2672.14  122.66  21.78
+2014  2054.70   81.48  25.22
+2015  1550.51  108.46  14.30
+2016  4075.76  306.97  13.28
+2017  3284.44  213.90  15.35
+2018  2405.63  155.42  15.48
+2019  3136.48  234.08  13.40
+2020  4146.02  226.87  18.27
+2021  3641.58  179.11  20.33
+2022  2264.34  131.30  17.24
+2023  2114.27  111.54  18.95
+2024  2342.76  175.17  13.37
+state series 2012-2024: n = 13; Pearson r = 0.767 (p = 0.0022); Spearman rho = 0.753 (p = 0.0030)
+without 2012 (Landsat 7 only): n = 12; Pearson r = 0.852 (p = 0.0004); Spearman rho = 0.881 (p = 0.0002)
+FINN/MapBiomas ratio: median 17.24; range 13.28 (2016) to 37.69 (2012)
+change 2020->2023: FINN -49.0%  MapBiomas -50.8%
+change 2023->2024: FINN +10.8%  MapBiomas +57.0%
+        n  spearman    p  share_mb_top10  share_finn_top10mb  ratio_top10  ratio_rest
+year                                                                                 
+2012  295     0.502  0.0          84.350              23.224       10.377     184.899
+2013  295     0.611  0.0          72.248              23.654        7.132      59.930
+2014  295     0.472  0.0          77.064              24.519        8.023      82.991
+2015  295     0.499  0.0          80.275              30.046        5.351      50.700
+2016  295     0.637  0.0          80.365              37.627        6.216      42.176
+2017  295     0.594  0.0          77.876              30.619        6.037      48.154
+2018  295     0.591  0.0          76.811              33.619        6.775      44.308
+2019  295     0.658  0.0          76.303              34.271        6.018      37.165
+2020  295     0.726  0.0          74.106              28.305        6.980      50.598
+2021  295     0.660  0.0          68.761              29.355        8.680      45.979
+2022  295     0.590  0.0          69.760              26.987        6.671      41.637
+2023  295     0.651  0.0          78.957              26.075        6.260      66.589
+2024  295     0.524  0.0          74.584              29.888        5.359      36.895
+municipal Spearman per year: 0.47 to 0.73 (all p <= 9.7e-18); top-10 share of MapBiomas area 69-84%, of FINN area 23-38%; ratio top-10 5.4-10.4, rest 37-185
+share of 2012-2024 burned area by mesoregion (%): {'finn_km2': {'Grande Florianópolis': 3.2, 'Norte Catarinense': 11.1, 'Oeste Catarinense': 27.3, 'Serrana': 44.4, 'Sul Catarinense': 8.1, 'Vale do Itajaí': 6.0}, 'mb_km2': {'Grande Florianópolis': 1.9, 'Norte Catarinense': 7.5, 'Oeste Catarinense': 18.7, 'Serrana': 65.6, 'Sul Catarinense': 5.6, 'Vale do Itajaí': 0.6}}
+2012-2024, municipalities with >= 13 events (n = 288): Spearman FINN area/event vs MapBiomas area/event rho = 0.46 (p = 3.9e-16); CO2/event vs MapBiomas area/event rho = 0.28 (p = 1.5e-06)
+  São Joaquim: events 4640; FINN area/event 0.445 km2; MapBiomas area/event 0.0543 km2; CO2/event 524 t
+  Lages: events 5596; FINN area/event 0.571 km2; MapBiomas area/event 0.0817 km2; CO2/event 659 t
+  Capão Alto: events 2194; FINN area/event 0.576 km2; MapBiomas area/event 0.0483 km2; CO2/event 718 t
+  Água Doce: events 1888; FINN area/event 0.599 km2; MapBiomas area/event 0.1237 km2; CO2/event 709 t
+  Curitibanos: events 1118; FINN area/event 0.552 km2; MapBiomas area/event 0.0154 km2; CO2/event 806 t
+  Lebon Régis: events 1192; FINN area/event 0.573 km2; MapBiomas area/event 0.0205 km2; CO2/event 1019 t
+  São José do Cerrito: events 1605; FINN area/event 0.494 km2; MapBiomas area/event 0.0040 km2; CO2/event 747 t

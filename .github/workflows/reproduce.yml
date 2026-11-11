@@ -1,0 +1,38 @@
+# Continuous check of the published results of FINN_SC.
+# Job "tests": checks every published number against the archived outputs in results/ (fast).
+# Job "reproduce": recomputes every table, statistic and figure from the archived records with Python only
+# (the kernel density of Figure 5 needs R + spatstat and is taken from the archived results/tables/kde_*),
+# then runs the same tests and compares the recomputed tables and logs with the published run.
+name: reproduce
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q tests
+
+  reproduce:
+    runs-on: ubuntu-latest
+    needs: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - name: Recompute results (Python steps; archived kernel density)
+        run: python python/run_analysis.py --no-r
+      - name: Tests on the recomputed results
+        run: python -m pytest -q tests
+      - name: Recomputed tables and logs against the published run (results/MANIFEST.sha256)
+        run: python tools/verify_manifest.py

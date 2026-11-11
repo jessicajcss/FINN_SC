@@ -1,0 +1,19 @@
+annual CO2 2012-2025: min 2300080 (2015), max 6631365 (2020), mean 4205843, CV 28.3%
+Gini of municipal CO2 2025: 0.728 (n = 277 municipalities with emissions); 0.744 (n = 295, zeros included)
+top-10 municipalities hold 34.8% of the CO2; 21 municipalities hold half of it
+2025: municipalities with >= 5 screened events: 192; CO2 per event median 478 t (IQR 315-896); state mean 693 t; Serrana mean 707 t
+Spearman FINN temperate-forest share vs CO2 per event (2025, n = 192): rho = 0.67 (p = 8.1e-27)
+  São Joaquim: events 340; CO2 141240 t; CO2/event 415 t (median 133); area/event 0.357 km2 (median 0.134); FINN temperate-forest share 12.0%
+  Lages: events 429; CO2 225727 t; CO2/event 526 t (median 133); area/event 0.425 km2 (median 0.134); FINN temperate-forest share 15.5%
+  Capão Alto: events 182; CO2 109276 t; CO2/event 600 t (median 130); area/event 0.432 km2 (median 0.133); FINN temperate-forest share 25.1%
+  Bom Jardim da Serra: events 144; CO2 67711 t; CO2/event 470 t (median 154); area/event 0.374 km2 (median 0.133); FINN temperate-forest share 18.7%
+  Painel: events 120; CO2 48514 t; CO2/event 404 t (median 133); area/event 0.332 km2 (median 0.134); FINN temperate-forest share 19.1%
+  Água Doce: events 169; CO2 109272 t; CO2/event 647 t (median 180); area/event 0.527 km2 (median 0.132); FINN temperate-forest share 15.7%
+  São José do Cerrito: events 142; CO2 156693 t; CO2/event 1103 t (median 328); area/event 0.668 km2 (median 0.137); FINN temperate-forest share 36.8%
+  Curitibanos: events 137; CO2 143302 t; CO2/event 1046 t (median 269); area/event 0.541 km2 (median 0.134); FINN temperate-forest share 48.3%
+  Lebon Régis: events 70; CO2 148272 t; CO2/event 2118 t (median 852); area/event 0.873 km2 (median 0.881); FINN temperate-forest share 72.7%
+  2025 events with dominant GENVEG 1: n = 2920; CO2 per event median 127 t, mean 366 t; area median 0.132 km2
+  2025 events with dominant GENVEG 2: n = 724; CO2 per event median 204 t, mean 532 t; area median 0.135 km2
+  2025 events with dominant GENVEG 4: n = 1363; CO2 per event median 461 t, mean 1519 t; area median 0.138 km2
+  2025 events with dominant GENVEG 9: n = 114; CO2 per event median 96 t, mean 235 t; area median 0.123 km2
+legacy bounding-box records inside SC (%), MODIS+VIIRS: {2012: 32.3, 2013: 33.5, 2014: 28.2, 2015: 29.2, 2016: 30.2, 2017: 31.0, 2018: 31.7, 2019: 30.2, 2020: 32.3, 2021: 32.2, 2022: 33.1, 2023: 33.2, 2024: 34.8, 2025: 34.5} | range 28.2-34.8, median 32.2

@@ -1,0 +1,17 @@
+events: classes ['0', '1–9', '10–24', '25–49', '50–99', '100–199', '≥ 200'] counts [18, 152, 80, 26, 10, 7, 2]
+Figure 3 mesoregions: [['Grande Florianópolis', 160.0, 2.17], ['Norte Catarinense', 472.0, 2.96], ['Oeste Catarinense', 1255.0, 4.59], ['Serrana', 2333.0, 10.45], ['Sul Catarinense', 511.0, 5.26], ['Vale do Itajaí', 390.0, 2.98]]
+Figure 4: max density 52.75 | sigma ppl (m) 2774
+Figure 5: state area 2241.62 | max pct São José do Cerrito 9.67
+area_finn: classes ['0', '< 1', '1 a < 5', '5 a < 10', '10 a < 25', '25 a < 50', '50 a < 100', '≥ 100'] counts [18, 69, 114, 37, 40, 9, 6, 2]
+pct: classes ['0', '< 0,5', '0,5 a < 1', '1 a < 2', '2 a < 4', '4 a < 8', '≥ 8'] counts [18, 76, 42, 63, 55, 39, 2]
+Figure 6 CO2: Fisher-Jenks upper limits [10329.31, 31410.43, 71909.23, 149037.6, 223448.12]; counts [198, 52, 20, 6, 1]; zero 18
+Figure 6 CO: Fisher-Jenks upper limits [797.14, 2177.71, 4109.08, 6885.32, 11580.59]; counts [210, 40, 17, 6, 4]; zero 18
+Figure 6 NOXasNO: Fisher-Jenks upper limits [17.22, 54.77, 133.47, 265.15, 394.51]; counts [214, 48, 9, 5, 1]; zero 18
+Figure 6 SO2: Fisher-Jenks upper limits [7.98, 23.27, 47.1, 78.87, 129.77]; counts [210, 42, 18, 3, 4]; zero 18
+Figure 6 PM25: Fisher-Jenks upper limits [97.82, 276.0, 498.7, 801.04, 1361.92]; counts [210, 41, 16, 6, 4]; zero 18
+Figure 6 NH3: Fisher-Jenks upper limits [16.46, 43.31, 71.42, 110.81, 222.17]; counts [212, 41, 13, 7, 4]; zero 18
+Figure 6 CH4: Fisher-Jenks upper limits [38.12, 104.39, 187.57, 274.28, 509.45]; counts [212, 40, 15, 6, 4]; zero 18
+Figure 6 NMOC: Fisher-Jenks upper limits [365.49, 983.02, 1855.95, 3030.17, 5159.88]; counts [210, 40, 17, 6, 4]; zero 18
+Figure 6 OC: Fisher-Jenks upper limits [51.15, 140.29, 251.55, 365.18, 684.55]; counts [212, 41, 14, 6, 4]; zero 18
+Figure 6 BC: Fisher-Jenks upper limits [4.14, 11.67, 23.73, 40.35, 76.26]; counts [203, 43, 20, 6, 5]; zero 18
+Figure 1 events (MV): {2012: 6441, 2013: 5810, 2014: 4852, 2015: 3549, 2016: 8296, 2017: 6590, 2018: 5441, 2019: 6561, 2020: 8212, 2021: 6825, 2022: 5233, 2023: 4940, 2024: 5365, 2025: 5121}

@@ -1,0 +1,31 @@
+metric,value,note
+median_finn_over_mcd,34.41100879051828,
+median_mb_over_mcd,1.9033769480951899,
+median_finn_over_mb,17.244975339274355,
+mcd_over_mb_min,0.3180660621591413,
+mcd_over_mb_max,0.776117714906209,
+state_pearson_mcd_mb,0.8748886743587064,p = 0.0001; n = 13
+state_pearson_p_mcd_mb,9.039831835828476e-05,
+state_spearman_mcd_mb,0.8571428571428571,p = 0.0002; n = 13
+state_spearman_p_mcd_mb,0.00018093408872524061,
+municipal_spearman_min_mcd_mb,0.29916378887760847,"per year, n = 295"
+municipal_spearman_max_mcd_mb,0.442898758436282,"per year, n = 295"
+state_pearson_mcd_finn,0.6229439686946224,p = 0.0229; n = 13
+state_pearson_p_mcd_finn,0.022946654398707612,
+state_spearman_mcd_finn,0.6593406593406593,p = 0.0142; n = 13
+state_spearman_p_mcd_finn,0.0142255785114567,
+municipal_spearman_min_mcd_finn,0.20828295167730837,"per year, n = 295"
+municipal_spearman_max_mcd_finn,0.43937568182377446,"per year, n = 295"
+municipal_total_spearman_mcd_mb,0.6574531812379636,"2012-2024 totals, n = 295, p = 6.8e-38"
+municipal_total_spearman_mcd_finn,0.5501764576881433,"2012-2024 totals, n = 295, p = 9.7e-25"
+municipal_total_spearman_mb_finn,0.7458936726115243,"2012-2024 totals, n = 295, p = 1.2e-53"
+municipalities_mcd_any_year,118.0,
+serrana_share_pct_mcd,68.79595824390135,2012-2024
+serrana_share_pct_mb,65.62720518483583,2012-2024
+serrana_share_pct_finn,44.425641989561235,2012-2024
+change_2020_2023_pct_mcd,-60.68993104765098,
+change_2023_2024_pct_mcd,211.59057470200975,
+change_2020_2023_pct_mb,-50.83448240412748,
+change_2023_2024_pct_mb,57.041601879109336,
+change_2020_2023_pct_finn,-49.00475943024588,
+change_2023_2024_pct_finn,10.806801198149497,

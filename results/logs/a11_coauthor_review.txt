@@ -1,0 +1,155 @@
+1 seasonality (share of screened events, %, 2012-2025):
+              region  events  jul_sep  jul_nov  mar_jun  peak_month
+      Santa Catarina   83236     60.0     72.1     18.5           8
+Grande Florianópolis    3370     45.2     62.5     24.0           8
+   Norte Catarinense    8932     50.5     65.5     23.2           8
+   Oeste Catarinense   23167     57.6     71.4     19.0           8
+             Serrana   33291     74.9     84.0      9.6           8
+     Sul Catarinense    8115     39.0     51.5     37.0           8
+      Vale do Itajaí    6361     39.3     53.5     30.5           8
+  2025: Jul-Sep 55.8%, Jul-Nov 68.1%
+2 FINN area 2020 = 4146.0 km2; largest: Lages 407.4 km2 (9.8%); São Joaquim 201.2 km2 (4.9%); Bom Jardim da Serra 145.9 km2 (3.5%); Capão Alto 103.7 km2 (2.5%); Água Doce 101.1 km2 (2.4%)
+3 per-area metrics 2025:
+                      area_share_pct  events_share_pct  co2_share_pct  events_per_100km2  co2_t_per_km2  pm25_kg_per_km2  finn_area_pct_of_meso  co2_t_per_event  events_per_100km2_mean_2012_2025
+mesorregiao                                                                                                                                                                                       
+Grande Florianópolis            7.69              3.12           2.80               2.17          13.54           116.66                   0.70           622.95                              3.27
+Norte Catarinense              16.64              9.22           9.09               2.96          20.28           162.28                   1.17           684.37                              4.00
+Oeste Catarinense              28.53             24.51          26.44               4.59          34.42           262.00                   2.16           749.03                              6.06
+Serrana                        23.32             45.56          46.49              10.45          74.01           546.59                   4.78           708.35                             10.65
+Sul Catarinense                10.14              9.98           7.40               5.26          27.08           202.04                   1.93           514.51                              5.97
+Vale do Itajaí                 13.67              7.62           7.78               2.98          21.13           176.02                   1.21           709.10                              3.47
+  state: 5.35 events/100 km2; 37.1 t CO2/km2; 282.8 kg PM2.5/km2
+4 2025: Kruskal-Wallis H = 68.2, p = 2.5e-13, epsilon2 = 0.219, n = 295; medians Grande Florianópolis 1.49; Norte Catarinense 2.64; Oeste Catarinense 2.96; Serrana 7.19; Sul Catarinense 5.06; Vale do Itajaí 2.05
+   Dunn Grande Florianópolis vs Serrana: z = -5.83, p (Holm) = 7.63e-08
+   Dunn Norte Catarinense vs Serrana: z = -5.36, p (Holm) = 1.06e-06
+   Dunn Oeste Catarinense vs Serrana: z = -4.98, p (Holm) = 7.49e-06
+   Dunn Serrana vs Sul Catarinense: z = +2.03, p (Holm) = 0.213
+   Dunn Serrana vs Vale do Itajaí: z = +6.41, p (Holm) = 2.18e-09
+4 mean_2012_2025: Kruskal-Wallis H = 73.0, p = 2.5e-14, epsilon2 = 0.235, n = 295; medians Grande Florianópolis 2.97; Norte Catarinense 3.77; Oeste Catarinense 4.96; Serrana 9.53; Sul Catarinense 5.52; Vale do Itajaí 3.38
+   Dunn Grande Florianópolis vs Serrana: z = -5.64, p (Holm) = 2.37e-07
+   Dunn Norte Catarinense vs Serrana: z = -5.46, p (Holm) = 6.27e-07
+   Dunn Oeste Catarinense vs Serrana: z = -3.87, p (Holm) = 0.0011
+   Dunn Serrana vs Sul Catarinense: z = +2.62, p (Holm) = 0.0442
+   Dunn Serrana vs Vale do Itajaí: z = +6.97, p (Holm) = 4.82e-11
+  SEM 2025 (log density > 0, n = 277, knn6): Moran I OLS residuals = 0.225 (p = 5.6e-15); lambda = 0.514; Moran I SEM filtered = -0.015 (p = 0.397)
+   Grande Florianópolis: density ratio to Serrana = 0.37 (p = 0.00116)
+   Norte Catarinense: density ratio to Serrana = 0.35 (p = 0.000265)
+   Oeste Catarinense: density ratio to Serrana = 0.56 (p = 0.00912)
+   Sul Catarinense: density ratio to Serrana = 0.78 (p = 0.339)
+   Vale do Itajaí: density ratio to Serrana = 0.39 (p = 0.000131)
+  SEM mean_2012_2025 (log density > 0, n = 294, knn6): Moran I OLS residuals = 0.388 (p = 1.8e-40); lambda = 0.772; Moran I SEM filtered = 0.019 (p = 0.243)
+   Grande Florianópolis: density ratio to Serrana = 0.93 (p = 0.822)
+   Norte Catarinense: density ratio to Serrana = 0.69 (p = 0.188)
+   Oeste Catarinense: density ratio to Serrana = 1.01 (p = 0.955)
+   Sul Catarinense: density ratio to Serrana = 0.88 (p = 0.662)
+   Vale do Itajaí: density ratio to Serrana = 0.57 (p = 0.0172)
+5 climate correlations, all years vs without 2015 and 2023 (precipitation, soil moisture, ONI):
+  excluded none:
+      resposta      preditor  n    rho     p  p_holm  rho_loo_min  rho_loo_max
+       eventos  precip_mm_fs 14 -0.684 0.007   0.035       -0.797       -0.615
+       eventos soil_moist_fs 14 -0.635 0.015   0.059       -0.758       -0.544
+       eventos        ONI_fs 14 -0.516 0.059   0.176       -0.692       -0.396
+     area_FINN  precip_mm_fs 14 -0.710 0.004   0.022       -0.819       -0.648
+     area_FINN soil_moist_fs 14 -0.657 0.011   0.043       -0.780       -0.571
+     area_FINN        ONI_fs 14 -0.525 0.054   0.161       -0.703       -0.407
+           CO2  precip_mm_fs 14 -0.710 0.004   0.022       -0.819       -0.648
+           CO2 soil_moist_fs 14 -0.701 0.005   0.022       -0.824       -0.626
+           CO2        ONI_fs 14 -0.508 0.064   0.128       -0.703       -0.385
+area_MapBiomas  precip_mm_fs 13 -0.478 0.098   0.409       -0.615       -0.406
+area_MapBiomas soil_moist_fs 13 -0.390 0.188   0.543       -0.636       -0.294
+area_MapBiomas        ONI_fs 13 -0.500 0.082   0.409       -0.615       -0.420
+  excluded 2015 2023:
+      resposta      preditor  n    rho     p  p_holm  rho_loo_min  rho_loo_max
+       eventos  precip_mm_fs 12 -0.559 0.059   0.293       -0.736       -0.491
+       eventos soil_moist_fs 12 -0.469 0.124   0.498       -0.600       -0.364
+       eventos        ONI_fs 12 -0.259 0.417   1.000       -0.527       -0.136
+     area_FINN  precip_mm_fs 12 -0.601 0.039   0.193       -0.736       -0.500
+     area_FINN soil_moist_fs 12 -0.503 0.095   0.381       -0.636       -0.382
+     area_FINN        ONI_fs 12 -0.273 0.391   0.782       -0.545       -0.136
+           CO2  precip_mm_fs 12 -0.601 0.039   0.193       -0.727       -0.509
+           CO2 soil_moist_fs 12 -0.573 0.051   0.205       -0.709       -0.464
+           CO2        ONI_fs 12 -0.245 0.443   0.887       -0.545       -0.109
+area_MapBiomas  precip_mm_fs 11 -0.400 0.223   1.000       -0.612       -0.321
+area_MapBiomas soil_moist_fs 11 -0.282 0.401   1.000       -0.527       -0.164
+area_MapBiomas        ONI_fs 11 -0.300 0.370   1.000       -0.491       -0.115
+6 VIIRS CO2 increment 39.6-56.2% (n = 12); Spearman with MODIS-only events rho = -0.59 (p = 0.045); with precipitation rho = 0.20 (p = 0.54); 3 years with fewest MODIS events [2015, 2014, 2018]: 53.0-56.2%; 3 with most [2020, 2016, 2021]: 39.6-46.3%
+7 annual events: mean 5945, variance 1709418 (Poisson variance = mean); dispersion chi2 = 3738, df = 13, p = 0; CO2 per event across years: Kruskal-Wallis H = 188.9, p = 2.6e-33, epsilon2 = 0.0021; median CO2 per event 230-271 t (v2.5, 2012-2021) and 201-228 t (v2.5.1, 2022-2025)
+8 inventories (2020 and 2025):
+                    inventory               version      sensor    count_label  count  area_km2  CO2_Mt  CO2_t_per_km2  forest_area_pct  forest_CO2_pct  forest_CO2_t_per_km2  detections  records
+           LCQAR (2022), 2020 FINN (v1.5, inferred)       MODIS focos de calor   4625       NaN   12.91            NaN              NaN             NaN                   NaN         NaN      NaN
+              FINN v1.5, 2020                  v1.5       MODIS      registros   4609   4134.58   12.88        3116.08            50.57           87.36               5382.53      4609.0   4609.0
+        FINN v2.5 MODIS, 2020                  v2.5       MODIS        eventos   1971   2799.76    4.56        1630.08            37.61           61.25               2654.38      2689.0   5643.0
+  FINN v2.5 MODIS+VIIRS, 2020                  v2.5 MODIS+VIIRS        eventos   8212   4146.02    6.63        1599.45            35.82           59.53               2658.21      9953.0  15727.0
+FINN v2.5.1 MODIS+VIIRS, 2025                v2.5.1 MODIS+VIIRS        eventos   5121   2241.62    3.55        1585.80            34.44           59.26               2728.83      5489.0   8581.0
+    type  area_v15_km2  area_v25_km2  co2_t_per_km2_v15  co2_t_per_km2_v25
+  forest        2091.0        1485.1             5382.5             2658.2
+genveg_1         349.3        1708.5              610.0              912.2
+genveg_2        1555.7         844.5              831.4             1233.8
+genveg_9         138.6         107.9              881.3              772.0
+  totals (Mt CO2): v1.5 12.88; v2.5 6.63; v2.5 area x v1.5 CO2/km2 9.83; v1.5 area x v2.5 CO2/km2 7.90; v2.5 with the v1.5 forest CO2/km2 only 10.68
+  symmetric decomposition of the gap (6.25 Mt): CO2 per km2 by type 4.09 Mt (65%), area composition by type 2.16 Mt (35%); total area v1.5 4134.6 km2, v2.5 4146.0 km2
+9 density by mesoregion (per 100 km2):
+                      v15_records_2020  v25_modis_events_2020  v25_mv_events_2020  v251_mv_events_2025
+Grande Florianópolis              1.85                   0.83                4.96                 2.17
+Norte Catarinense                 3.35                   1.42                6.21                 2.96
+Oeste Catarinense                 4.13                   1.74                7.55                 4.59
+Serrana                           9.23                   3.91               13.93                10.45
+Sul Catarinense                   5.01                   2.37               10.23                 5.26
+Vale do Itajaí                    2.02                   0.83                5.27                 2.98
+  Spearman (n = 6 mesoregions) v1.5 records 2020 vs v25_modis_events_2020: rho = 0.94
+  Spearman (n = 6 mesoregions) v1.5 records 2020 vs v25_mv_events_2020: rho = 1.00
+  Spearman (n = 6 mesoregions) v1.5 records 2020 vs v251_mv_events_2025: rho = 0.94
+10 Spearman rho of mean event density (2012-2025) with land-cover fractions, excluding events at sites with >= k days:
+ excluded_sites_min_days  events_removed_pct  rho_silviculture  rho_forest  rho_grassland
+                       0               0.000             0.415      -0.250          0.128
+                      12               0.321             0.415      -0.251          0.126
+                       8               1.663             0.408      -0.254          0.122
+                       6               3.110             0.397      -0.257          0.114
+                       4               9.000             0.375      -0.272          0.098
+  detections at sites with 8-15 days, top municipalities: Santa Cecília 287; Brunópolis 94; Curitibanos 89; Lages 77; Lebon Régis 76; Caçador 70; Campos Novos 68; São José 62
+  flagged detections (>= 16 days) by municipality, 2012-2025: Siderópolis 154; Ponte Alta do Norte 32; Timbó Grande 24; São José 22; Urussanga 18; Santa Cecília 18; Campo Erê 16; Campo Belo do Sul 8; Lebon Régis 1
+  silviculture fraction (2023) of municipalities with flagged detections: Siderópolis 0.01; Ponte Alta do Norte 0.42; Timbó Grande 0.31; São José 0.00; Urussanga 0.02; Santa Cecília 0.44; Campo Erê 0.03; Campo Belo do Sul 0.19; Lebon Régis 0.26 | municipal median 0.049
+11 Sul Catarinense split by municipal agriculture fraction (2023):
+             group  municipalities  events  events_per_100km2_yr  mar_jun_pct  jul_sep_pct  finn_cropland_area_pct  agriculture_mean
+agriculture >= 40%              21    3387                  6.35        49.39        32.51                   28.23              0.58
+ agriculture < 40%              25    4728                  5.72        28.17        43.63                    2.40              0.29
+  FINN cropland (GENVEG 9) share of the area by mesoregion (%): Grande Florianópolis 0.1; Norte Catarinense 1.2; Oeste Catarinense 0.6; Serrana 0.3; Sul Catarinense 13.0; Vale do Itajaí 2.2
+  within-mesoregion Spearman (mean density 2012-2025 vs fraction):
+      mesorregiao   n    cobertura    rho     p
+Oeste Catarinense 118       forest  0.265 0.004
+Oeste Catarinense 118    grassland  0.207 0.025
+Oeste Catarinense 118      pasture -0.121 0.193
+Oeste Catarinense 118  agriculture -0.412 0.000
+Oeste Catarinense 118 silviculture  0.661 0.000
+  Sul Catarinense  46       forest  0.051 0.735
+  Sul Catarinense  46    grassland -0.042 0.784
+  Sul Catarinense  46      pasture  0.020 0.894
+  Sul Catarinense  46  agriculture  0.048 0.751
+  Sul Catarinense  46 silviculture  0.059 0.697
+          Serrana  30       forest -0.359 0.051
+          Serrana  30    grassland  0.670 0.000
+          Serrana  30      pasture -0.231 0.219
+          Serrana  30  agriculture -0.288 0.123
+          Serrana  30 silviculture -0.341 0.066
+12 land cover, state shares (%): 2019 (MapBiomas C10, classified area; Figure 1) vs 2023 (municipal fractions, section 2.8):
+       group  pct_2019_classified_area  pct_2023_municipal_area  difference_pp
+      forest                     40.17                    39.36          -0.81
+   grassland                      5.18                     5.76           0.58
+     pasture                      9.91                     8.59          -1.33
+ agriculture                     30.47                    30.78           0.30
+silviculture                     10.47                    10.88           0.41
+13 Figure S3 2012: events 6440, max 63.1 (Timbé do Sul), Serrana top 1% share 26.8%
+13 Figure S3 2013: events 5809, max 49.9 (Santa Cecília), Serrana top 1% share 41.5%
+13 Figure S3 2014: events 4852, max 41.7 (São Joaquim), Serrana top 1% share 78.3%
+13 Figure S3 2015: events 3548, max 40.0 (Santa Cecília), Serrana top 1% share 77.1%
+13 Figure S3 2016: events 8296, max 66.4 (São Joaquim), Serrana top 1% share 98.1%
+13 Figure S3 2017: events 6590, max 55.5 (Ipuaçu), Serrana top 1% share 82.7%
+13 Figure S3 2018: events 5441, max 66.6 (Santa Cecília), Serrana top 1% share 74.5%
+13 Figure S3 2019: events 6561, max 56.5 (Três Barras), Serrana top 1% share 87.4%
+13 Figure S3 2020: events 8211, max 53.7 (São Joaquim), Serrana top 1% share 86.9%
+13 Figure S3 2021: events 6825, max 54.6 (Rio das Antas), Serrana top 1% share 63.6%
+13 Figure S3 2022: events 5232, max 69.6 (Bom Jardim da Serra), Serrana top 1% share 74.8%
+13 Figure S3 2023: events 4940, max 46.1 (Garuva), Serrana top 1% share 90.8%
+13 Figure S3 2024: events 5365, max 63.5 (Lages), Serrana top 1% share 96.8%
+13 Figure S3 2025: events 5121, max 52.8 (Lages), Serrana top 1% share 93.6%
+13 Figure S3 layout problems: 0

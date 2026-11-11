@@ -1,0 +1,55 @@
+2025: municipalities with records 277; with screened events 277; rows in table 277
+Table 3 (t/yr; NOx as NO; COV = NMOC):
+                          CO2      CO   PM25    OC  NOXasNO   CH4   NH3   NMOC   BC   SO2  area_km2  events
+mesorregiao                                                                                                
+Grande Florianópolis    99673    7076    859   427      105   318   137   3207   39    67        51     160
+Norte Catarinense      323023   21566   2585  1278      391   966   410   9717  132   207       186     472
+Oeste Catarinense      940032   59675   7156  3465     1252  2604  1085  26904  352   596       591    1255
+Serrana               1652580  102145  12204  5899     2300  4441  1842  45813  641  1027      1068    2333
+Sul Catarinense        262912   16822   1962   944      352   759   313   7732   97   161       188     511
+Vale do Itajaí         276550   19084   2304  1140      312   855   365   8647  107   182       158     390
+Serrana share (%): {'CO2': 46.49, 'CO': 45.12, 'PM25': 45.08, 'OC': 44.85, 'NOXasNO': 48.83, 'CH4': 44.66, 'NH3': 44.37, 'NMOC': 44.91, 'BC': 46.84, 'SO2': 45.87}
+Serrana + Oeste share (%): {'CO2': 72.93, 'CO': 71.49, 'PM25': 71.52, 'OC': 71.19, 'NOXasNO': 75.41, 'CH4': 70.85, 'NH3': 70.52, 'NMOC': 71.28, 'BC': 72.58, 'SO2': 72.46} | min NH3 70.52 | max NOXasNO 75.41
+PM2.5 Serrana / Oeste = 1.71; Serrana / Vale do Itajaí = 5.30
+2024 top-12 events: [('Lages', 626), ('São Joaquim', 429), ('Capão Alto', 220), ('Bom Jardim da Serra', 217), ('Água Doce', 199), ('São José do Cerrito', 151), ('Campos Novos', 128), ('Campo Belo do Sul', 114), ('Painel', 109), ('Lebon Régis', 108), ('Curitibanos', 83), ('Urupema', 82)]
+2024: municipalities with events 268; >=100 events: 10 ['Lages', 'São Joaquim', 'Capão Alto', 'Bom Jardim da Serra', 'Água Doce', 'São José do Cerrito', 'Campos Novos', 'Campo Belo do Sul', 'Painel', 'Lebon Régis']
+2024 events by mesoregion: {'Grande Florianópolis': 151, 'Norte Catarinense': 555, 'Oeste Catarinense': 1261, 'Serrana': 2816, 'Sul Catarinense': 224, 'Vale do Itajaí': 358} | total 5365 | shares % {'Grande Florianópolis': 2.8, 'Norte Catarinense': 10.3, 'Oeste Catarinense': 23.5, 'Serrana': 52.5, 'Sul Catarinense': 4.2, 'Vale do Itajaí': 6.7}
+2024 events per 100 km2: {'Grande Florianópolis': 2.05, 'Norte Catarinense': 3.48, 'Oeste Catarinense': 4.62, 'Serrana': 12.61, 'Sul Catarinense': 2.31, 'Vale do Itajaí': 2.74} | state 5.6
+2025 top-12 events: [('Lages', 429), ('São Joaquim', 340), ('Capão Alto', 182), ('Água Doce', 169), ('Bom Jardim da Serra', 144), ('São José do Cerrito', 142), ('Curitibanos', 137), ('Painel', 120), ('Campos Novos', 110), ('Campo Belo do Sul', 82), ('Correia Pinto', 77), ('Cerro Negro', 72)]
+2025: municipalities with events 277; >=100 events: 9 ['Lages', 'São Joaquim', 'Capão Alto', 'Água Doce', 'Bom Jardim da Serra', 'São José do Cerrito', 'Curitibanos', 'Painel', 'Campos Novos']
+2025 events by mesoregion: {'Grande Florianópolis': 160, 'Norte Catarinense': 472, 'Oeste Catarinense': 1255, 'Serrana': 2333, 'Sul Catarinense': 511, 'Vale do Itajaí': 390} | total 5121 | shares % {'Grande Florianópolis': 3.1, 'Norte Catarinense': 9.2, 'Oeste Catarinense': 24.5, 'Serrana': 45.6, 'Sul Catarinense': 10.0, 'Vale do Itajaí': 7.6}
+2025 events per 100 km2: {'Grande Florianópolis': 2.17, 'Norte Catarinense': 2.96, 'Oeste Catarinense': 4.59, 'Serrana': 10.45, 'Sul Catarinense': 5.26, 'Vale do Itajaí': 2.98} | state 5.35
+  Lages: 2024 626 -> 2025 429 (-31.5%)
+  São Joaquim: 2024 429 -> 2025 340 (-20.7%)
+  Capão Alto: 2024 220 -> 2025 182 (-17.3%)
+  Água Doce: 2024 199 -> 2025 169 (-15.1%)
+  Bom Jardim da Serra: 2024 217 -> 2025 144 (-33.6%)
+  São José do Cerrito: 2024 151 -> 2025 142 (-6.0%)
+  Curitibanos: 2024 83 -> 2025 137 (+65.1%)
+  Painel: 2024 109 -> 2025 120 (+10.1%)
+  Campos Novos: 2024 128 -> 2025 110 (-14.1%)
+  Campo Belo do Sul: 2024 114 -> 2025 82 (-28.1%)
+  Correia Pinto: 2024 64 -> 2025 77 (+20.3%)
+  Cerro Negro: 2024 66 -> 2025 72 (+9.1%)
+2025 top-3 municipalities: {'Lages': 429, 'São Joaquim': 340, 'Capão Alto': 182} = 951 events = 18.6% of the state
+2025 highest event densities (per 100 km2): {'São Joaquim': 18.0, 'Cerro Negro': 17.2, 'Lages': 16.3, 'Painel': 16.3, 'Bom Jardim da Serra': 15.3, 'São José do Cerrito': 15.0, 'Urupema': 14.8, 'Curitibanos': 14.4}
+  2025 leader CO2: Lages 223448.1 | 2nd São José do Cerrito 149037.6
+  2025 leader CO: Lages 11580.6 | 2nd Lebon Régis 11119.4
+  2025 leader PM25: Lages 1361.9 | 2nd Lebon Régis 1353.9
+  2025 leader OC: Lebon Régis 684.5 | 2nd Lages 617.2
+  2025 leader NOXasNO: Lages 394.5 | 2nd São Joaquim 265.2
+  2025 leader CH4: Lebon Régis 509.5 | 2nd Lages 467.5
+  2025 leader NH3: Lebon Régis 222.2 | 2nd Curitibanos 194.0
+  2025 leader NMOC: Lages 5159.9 | 2nd Lebon Régis 5040.9
+  2025 leader BC: Lages 76.3 | 2nd São José do Cerrito 68.0
+  2025 leader SO2: Lages 129.8 | 2nd Lebon Régis 101.9
+2025 municipalities with PM2.5 > 500 t: 10: {'Lages': 1362.0, 'Lebon Régis': 1354.0, 'Curitibanos': 1222.0, 'São José do Cerrito': 1111.0, 'São Joaquim': 801.0, 'Capão Alto': 777.0, 'Água Doce': 707.0, 'Caçador': 606.0, 'Cerro Negro': 595.0, 'Correia Pinto': 542.0} | next Bocaina do Sul 499
+  Lages: area 181.1 km2 = 6.9% of the municipality; CO2 223448 t; PM2.5 1362 t; NMOC 5160 t; NOXasNO 395 t; events 429
+  São Joaquim: area 121.3 km2 = 6.4% of the municipality; CO2 141240 t; PM2.5 801 t; NMOC 3030 t; NOXasNO 265 t; events 340
+  São José do Cerrito: area 91.8 km2 = 9.7% of the municipality; CO2 149038 t; PM2.5 1111 t; NMOC 4129 t; NOXasNO 202 t; events 142
+  Água Doce: area 90.2 km2 = 6.8% of the municipality; CO2 112773 t; PM2.5 707 t; NMOC 2692 t; NOXasNO 193 t; events 169
+  Capão Alto: area 79.8 km2 = 6.0% of the municipality; CO2 111554 t; PM2.5 777 t; NMOC 2934 t; NOXasNO 170 t; events 182
+2025 state FINN area 2241.6 km2
+2025 events by month: {1: 241, 2: 148, 3: 393, 4: 179, 5: 380, 6: 69, 7: 984, 8: 1157, 9: 718, 10: 374, 11: 253, 12: 225} | Jul-Sep 55.8% | Aug 22.6% | Jul-Nov 68.1%
+2012-2025 events by month: {1: 2334, 2: 2229, 3: 3125, 4: 4248, 5: 4428, 6: 3616, 7: 9765, 8: 27970, 9: 12218, 10: 4871, 11: 5227, 12: 3205} | Jul-Sep 60.0% | Aug 33.6% | Jul-Nov 72.1%
+2025 event area (km2): median 0.135; p90 0.96; detections per event: median 1, mean 1.06

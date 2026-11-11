@@ -1,0 +1,5 @@
+response,predictor,n,rho,p
+events,precip_mm_fs (Jul-Nov total),14,-0.6835164835164835,0.007036743639884641
+CO2,precip_mm_fs (Jul-Nov total),14,-0.7098901098901099,0.004450741418764225
+CO2_per_event_t,precip_mm_fs (Jul-Nov total),14,-0.43736263736263736,0.11784483174447676
+area_per_event_km2,precip_mm_fs (Jul-Nov total),14,-0.6703296703296703,0.008704233809858863

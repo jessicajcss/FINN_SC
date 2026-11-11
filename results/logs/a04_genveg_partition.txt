@@ -1,0 +1,16 @@
+   period  GENVEG                    classe  area_km2  area_pct  CO2_pct  PM25_pct  biomassa_kg_m2  biomassa_BMASS_kg_m2
+2012-2025       1            Savana e campo 18002.265    46.276   27.960    16.119           0.542                 0.542
+2012-2025       2         Savana arborizada  7866.191    20.221   16.136     9.239           0.719                 0.718
+2012-2025       3         Floresta tropical     3.869     0.010    0.062     0.051           5.787                 5.786
+2012-2025       4        Floresta temperada 12402.336    31.881   55.020    74.093           1.730                 1.730
+2012-2025       6 Floresta temperada perene     0.740     0.002    0.002     0.003           0.996                 0.996
+2012-2025       9                  Lavouras   626.158     1.610    0.820     0.495           0.534                 0.534
+     2025       1            Savana e campo  1048.612    46.779   26.507    14.800           0.533                 0.533
+     2025       2         Savana arborizada   376.267    16.786   13.293     7.371           0.747                 0.747
+     2025       3         Floresta tropical     0.032     0.001    0.008     0.006           5.443                 5.443
+     2025       4        Floresta temperada   771.739    34.428   59.245    77.266           1.807                 1.807
+     2025       6 Floresta temperada perene     0.139     0.006    0.003     0.005           0.503                 0.502
+     2025       9                  Lavouras    44.830     2.000    0.943     0.551           0.518                 0.518
+screened events: 83236
+events with >1 GENVEG (%): 2012-2025 39.4 | 2025 37.8
+events with records in >1 municipality (%): 2012-2025 0.80 | 2025 0.33

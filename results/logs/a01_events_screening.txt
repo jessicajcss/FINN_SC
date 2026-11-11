@@ -1,0 +1,56 @@
+records: 258694 {('MODIS', 'v2.5'): {'min': 2003, 'max': 2021, 'size': 102788}, ('MODIS', 'v2.5.1'): {'min': 2022, 'max': 2023, 'size': 6224}, ('MODIS+VIIRS', 'v2.5'): {'min': 2012, 'max': 2021, 'size': 115183}, ('MODIS+VIIRS', 'v2.5.1'): {'min': 2022, 'max': 2025, 'size': 34499}}
+ year      sensor version  records  detections  events  events_screened  flagged_events
+ 2003       MODIS    v2.5    14713        7578    5396             5396               0
+ 2004       MODIS    v2.5     9603        4977    3580             3580               0
+ 2005       MODIS    v2.5     6831        3566    2692             2692               0
+ 2006       MODIS    v2.5     9700        5038    3689             3684               5
+ 2007       MODIS    v2.5     5231        2768    2086             2086               0
+ 2008       MODIS    v2.5     4406        2265    1727             1727               0
+ 2009       MODIS    v2.5     4189        2154    1635             1635               0
+ 2010       MODIS    v2.5     4485        2312    1752             1752               0
+ 2011       MODIS    v2.5     3547        1792    1358             1358               0
+ 2012       MODIS    v2.5     3891        1942    1464             1464               0
+ 2013       MODIS    v2.5     3460        1748    1339             1339               0
+ 2014       MODIS    v2.5     2545        1280    1006             1006               0
+ 2015       MODIS    v2.5     1983         968     746              746               0
+ 2016       MODIS    v2.5     5395        2638    1956             1956               0
+ 2017       MODIS    v2.5     4343        2118    1581             1581               0
+ 2018       MODIS    v2.5     3118        1518    1150             1150               0
+ 2019       MODIS    v2.5     4240        2020    1504             1504               0
+ 2020       MODIS    v2.5     5643        2689    1971             1971               0
+ 2021       MODIS    v2.5     5465        2577    1889             1889               0
+ 2022       MODIS  v2.5.1     3286        1544    1347             1347               0
+ 2023       MODIS  v2.5.1     2938        1413    1222             1222               0
+ 2012 MODIS+VIIRS    v2.5    11473        7561    6460             6441              19
+ 2013 MODIS+VIIRS    v2.5    10197        6755    5810             5810               0
+ 2014 MODIS+VIIRS    v2.5     8390        5638    4871             4852              19
+ 2015 MODIS+VIIRS    v2.5     6256        4147    3549             3549               0
+ 2016 MODIS+VIIRS    v2.5    15362        9920    8296             8296               0
+ 2017 MODIS+VIIRS    v2.5    12133        7770    6590             6590               0
+ 2018 MODIS+VIIRS    v2.5     9832        6431    5441             5441               0
+ 2019 MODIS+VIIRS    v2.5    12334        7953    6561             6561               0
+ 2020 MODIS+VIIRS    v2.5    15727        9953    8268             8212              56
+ 2021 MODIS+VIIRS    v2.5    13479        8355    6886             6825              61
+ 2022 MODIS+VIIRS  v2.5.1     8817        5565    5254             5233              21
+ 2023 MODIS+VIIRS  v2.5.1     8115        5251    4960             4940              20
+ 2024 MODIS+VIIRS  v2.5.1     8986        5748    5406             5365              41
+ 2025 MODIS+VIIRS  v2.5.1     8581        5489    5160             5121              39
+events with records in more than one municipality: 1.41% (all products)
+MODIS+VIIRS 2012-2025: events with records in >1 municipality 0.8%; 2025 0.33%
+  R=1.0 km 2012 Lebon Régis: detections 1, days 1, months 1, centre -50.641 -26.997
+  R=1.0 km 2012 Urussanga: detections 18, days 18, months 5, centre -49.348 -28.485
+  R=1.0 km 2014 São José: detections 22, days 19, months 8, centre -48.660 -27.564
+  R=1.0 km 2020 Campo Belo do Sul: detections 8, days 7, months 3, centre -50.698 -27.870
+  R=1.0 km 2020 Ponte Alta do Norte: detections 32, days 26, months 8, centre -50.395 -27.203
+  R=1.0 km 2020 Timbó Grande: detections 24, days 23, months 7, centre -50.548 -26.701
+  R=1.0 km 2021 Campo Erê: detections 16, days 14, months 4, centre -53.231 -26.456
+  R=1.0 km 2021 Santa Cecília: detections 18, days 17, months 5, centre -50.515 -27.096
+  R=1.0 km 2021 Siderópolis: detections 33, days 28, months 9, centre -49.442 -28.588
+  R=1.0 km 2022 Siderópolis: detections 21, days 20, months 9, centre -49.442 -28.587
+  R=1.0 km 2023 Siderópolis: detections 20, days 16, months 6, centre -49.442 -28.587
+  R=1.0 km 2024 Siderópolis: detections 41, days 36, months 12, centre -49.442 -28.586
+  R=1.0 km 2025 Siderópolis: detections 39, days 37, months 11, centre -49.442 -28.586
+R = 0.75 km: flagged events per year 0-47; max share 0.76% (2024); max CO2 share 1.81% (2020)
+R = 1.0 km: flagged events per year 0-61; max share 0.89% (2021); max CO2 share 2.50% (2020)
+R = 1.5 km: flagged events per year 0-81; max share 1.18% (2021); max CO2 share 3.01% (2020)
+MODIS-only series, flagged events: {('v2.5', 2006): 5}

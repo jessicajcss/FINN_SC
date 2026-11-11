@@ -1,0 +1,15 @@
+2025: events 5160, flagged 39, analysed 5121 (kde_events.R: 5160 / 39 / 5121)
+B | 2012: events 6440 (flagged 19); own CV sigma not computed m; integral 6440.0; max 63.1 in Timbé do Sul; Serrana mean 8.91 (state 6.73); Serrana share of top 1% = 26.8%, top 10% = 41.3%
+B | 2013: events 5809 (flagged 0); own CV sigma not computed m; integral 5809.0; max 49.9 in Santa Cecília; Serrana mean 7.83 (state 6.07); Serrana share of top 1% = 41.5%, top 10% = 41.8%
+B | 2014: events 4852 (flagged 19); own CV sigma not computed m; integral 4852.0; max 41.7 in São Joaquim; Serrana mean 8.19 (state 5.07); Serrana share of top 1% = 78.3%, top 10% = 62.0%
+B | 2015: events 3548 (flagged 0); own CV sigma not computed m; integral 3548.0; max 40.0 in Santa Cecília; Serrana mean 6.13 (state 3.71); Serrana share of top 1% = 77.1%, top 10% = 60.3%
+B | 2016: events 8296 (flagged 0); own CV sigma not computed m; integral 8296.0; max 66.4 in São Joaquim; Serrana mean 16.14 (state 8.67); Serrana share of top 1% = 98.1%, top 10% = 76.6%
+B | 2017: events 6590 (flagged 0); own CV sigma not computed m; integral 6590.0; max 55.5 in Ipuaçu; Serrana mean 11.44 (state 6.89); Serrana share of top 1% = 82.7%, top 10% = 67.0%
+B | 2018: events 5441 (flagged 0); own CV sigma not computed m; integral 5441.0; max 66.6 in Santa Cecília; Serrana mean 9.30 (state 5.69); Serrana share of top 1% = 74.5%, top 10% = 62.4%
+B | 2019: events 6561 (flagged 0); own CV sigma not computed m; integral 6561.0; max 56.5 in Três Barras; Serrana mean 13.45 (state 6.86); Serrana share of top 1% = 87.4%, top 10% = 81.5%
+B | 2020: events 8211 (flagged 56); own CV sigma not computed m; integral 8211.0; max 53.7 in São Joaquim; Serrana mean 13.87 (state 8.58); Serrana share of top 1% = 86.9%, top 10% = 63.5%
+B | 2021: events 6825 (flagged 61); own CV sigma not computed m; integral 6825.0; max 54.6 in Rio das Antas; Serrana mean 11.41 (state 7.13); Serrana share of top 1% = 63.6%, top 10% = 58.4%
+B | 2022: events 5232 (flagged 21); own CV sigma not computed m; integral 5232.0; max 69.6 in Bom Jardim da Serra; Serrana mean 9.13 (state 5.47); Serrana share of top 1% = 74.8%, top 10% = 60.2%
+B | 2023: events 4940 (flagged 20); own CV sigma not computed m; integral 4940.0; max 46.1 in Garuva; Serrana mean 9.55 (state 5.16); Serrana share of top 1% = 90.8%, top 10% = 67.4%
+B | 2024: events 5365 (flagged 41); own CV sigma not computed m; integral 5365.0; max 63.5 in Lages; Serrana mean 12.47 (state 5.61); Serrana share of top 1% = 96.8%, top 10% = 77.0%
+B | 2025: events 5121 (flagged 39); own CV sigma not computed m; integral 5121.0; max 52.8 in Lages; Serrana mean 10.37 (state 5.35); Serrana share of top 1% = 93.6%, top 10% = 72.9%

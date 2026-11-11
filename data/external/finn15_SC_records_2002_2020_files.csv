@@ -1,0 +1,20 @@
+year,source,status,file,sha256,lines,header_lines,malformed_lines,duplicate_lines,records_box,records_SC,CO2_SC_t,check_source,check_file,check_records_SC,check_CO2_SC_t,rejected
+2002,ncar,ok,filtered_points_2002_MODIS_v1.5_converted_within_grid_ncar.txt,fb5e3209e55b3629,14185,1,0,0,14184,3431,8272774.326999781,,,,,
+2003,authors,ok,filtered_points_2003_MODIS_v1.5_converted_within_grid_newfuncao.txt,14443b90cb15bc63,24996,1,0,0,24995,8122,19516363.74315477,,,,,
+2004,authors,ok,filtered_points_2004_MODIS_v1.5_converted_within_grid_newfuncao.txt,95a836436b8a1e79,17671,1,0,0,17670,5379,13073242.625854515,,,,,
+2005,authors,ok,filtered_points_2005_MODIS_v1.5_converted_within_grid_newfuncao.txt,3256f0d6777a2440,12466,1,0,0,12465,3870,10534263.669832502,,,,,
+2006,authors,ok,filtered_points_2006_MODIS_v1.5_converted_within_grid_newfuncao.txt,53e87bc37cf6ee2c,15712,1,0,0,15711,5248,14095929.39250239,,,,,
+2007,authors,ok,filtered_points_2007_MODIS_v1.5_converted_within_grid_newfuncao.txt,f4fb7e7ba37b9709,11289,1,0,0,11288,3096,7937855.677148401,,,,,
+2008,authors,ok,filtered_points_2008_MODIS_v1.5_converted_within_grid_newfuncao.txt,3cbb8f11f371a55e,7226,1,0,0,7225,2060,5487299.990334652,,,,,
+2009,authors,ok,filtered_points_2009_MODIS_v1.5_converted_within_grid_newfuncao.txt,6eb876fcc2ca2cae,15828,1,1,7641,8185,2416,5593161.723123554,,,,,
+2010,authors,ok,filtered_points_2010_MODIS_v1.5_converted_within_grid_newfuncao.txt,054d65307004cc6c,6871,1,0,0,6870,2115,4500785.81709774,,,,,
+2011,authors,ok,filtered_points_2011_MODIS_v1.5_converted_within_grid_newfuncao.txt,91b6829a7da595f4,6515,1,0,0,6514,1720,3816970.1320070704,,,,,
+2012,authors,ok,filtered_points_2012_MODIS_v1.5_converted_within_grid_newfuncao.txt,28a305bf2023fb64,6338,1,0,0,6337,1861,4119132.14334747,,,,,
+2013,authors,ok,filtered_points_2013_MODIS_v1.5_converted_within_grid_newfuncao.txt,0fa68af3bf2d11fb,5558,1,0,0,5557,1741,4378833.76756059,,,,,
+2014,authors,ok,filtered_points_2014_MODIS_v1.5_converted_within_grid_newfuncao.txt,f5bbce67a877bf87,4949,1,0,0,4948,1160,2460763.953439177,,,,,
+2015,authors,ok,filtered_points_2015_MODIS_v1.5_converted_within_grid_newfuncao.txt,d87387dc8de71bde,3538,1,0,0,3537,860,1943379.592648279,ncar,filtered_points_2015_MODIS_v1.5_converted_within_grid_ncar.txt,860.0,1943379.592648279,
+2016,ncar,ok,filtered_points_2016_MODIS_v1.5_converted_within_grid_ncar.txt,0fed62181dcca8d7,16553,1,0,0,16552,4545,9627469.493645903,,,,,authors: filtered_points_2016_MODIS_v1.5_converted_within_grid_newfuncao.txt identical to 2015
+2017,ncar,ok,filtered_points_2017_MODIS_v1.5_converted_within_grid_ncar.txt,810a3141f4dce0ca,13210,1,0,0,13209,3738,9767660.957329545,,,,,authors: filtered_points_2017_MODIS_v1.5_converted_within_grid_newfuncao.txt identical to 2015
+2018,authors,ok,filtered_points_2018_MODIS_v1.5_converted_within_grid_newfuncao.txt,3c4a59b876bc6927,8664,1,0,0,8663,2660,7175790.860710118,,,,,
+2019,authors,ok,filtered_points_2019_MODIS_v1.5_converted_within_grid_newfuncao.txt,b3f94ae35acf5a2e,12447,1,0,0,12446,3491,8321029.256900363,,,,,
+2020,authors,ok,filtered_points_2020_MODIS_v1.5_converted_within_grid.txt,1453e4ba12903211,14850,1,0,0,14849,4609,12883690.590852745,,,,,

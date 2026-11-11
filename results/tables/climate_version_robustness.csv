@@ -1,0 +1,25 @@
+response,predictor,test,n,rho,p
+events,precip_mm_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.6484848484848483,0.04254012768448945
+events,precip_mm_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.5934500282326369,0.03250850970758283
+events,soil_moist_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.5272727272727272,0.11730806555020223
+events,soil_moist_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.5681525803827175,0.042790958277002814
+events,VPD_kPa_fs,"Spearman, FINN v2.5 years 2012-2021",10,0.5030303030303029,0.13833369839449197
+events,VPD_kPa_fs,"partial rank correlation controlling for version, 2012-2025",14,0.4861289214877788,0.0921108901368734
+events,ONI_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.7939393939393938,0.0060999233136969115
+events,ONI_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.6526870246187825,0.015593669396182376
+area_km2,precip_mm_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.709090909090909,0.021665923367532435
+area_km2,precip_mm_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.6273291925465838,0.0217270403242599
+area_km2,soil_moist_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.5757575757575757,0.08155281477260236
+area_km2,soil_moist_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.5947764126405769,0.03202477359851842
+area_km2,VPD_kPa_fs,"Spearman, FINN v2.5 years 2012-2021",10,0.5757575757575757,0.08155281477260236
+area_km2,VPD_kPa_fs,"partial rank correlation controlling for version, 2012-2025",14,0.5262634041699483,0.0646789571494024
+area_km2,ONI_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.8181818181818182,0.0038149200825507135
+area_km2,ONI_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.6627206452893248,0.0135662066405297
+CO2,precip_mm_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.6727272727272726,0.0330412225454377
+CO2,precip_mm_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.6367341873527557,0.01927430142761819
+CO2,soil_moist_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.6484848484848483,0.04254012768448945
+CO2,soil_moist_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.6501843819573573,0.01613297672260585
+CO2,VPD_kPa_fs,"Spearman, FINN v2.5 years 2012-2021",10,0.6242424242424242,0.053717767217167395
+CO2,VPD_kPa_fs,"partial rank correlation controlling for version, 2012-2025",14,0.5738195374045153,0.04030756908373766
+CO2,ONI_fs,"Spearman, FINN v2.5 years 2012-2021",10,-0.7818181818181817,0.007547007781067878
+CO2,ONI_fs,"partial rank correlation controlling for version, 2012-2025",14,-0.6233755641491546,0.022824420976035167

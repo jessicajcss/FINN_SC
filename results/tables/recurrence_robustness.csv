@@ -1,0 +1,17 @@
+check,term,estimate,lo95,hi95,note
+selection_ratio_block_bootstrap,forest,0.5111472678261064,0.4078563455547735,0.6349931496262021,"293 blocks of 20 km, 999 replicates"
+selection_ratio_block_bootstrap,grassland,6.835077021109489,5.676751589473872,8.361265449014933,"293 blocks of 20 km, 999 replicates"
+selection_ratio_block_bootstrap,pasture,1.0816547173284434,0.6648853184935731,1.588809636469747,"293 blocks of 20 km, 999 replicates"
+selection_ratio_block_bootstrap,agriculture,0.775626132456656,0.6030300114534065,0.9508878807028457,"293 blocks of 20 km, 999 replicates"
+selection_ratio_block_bootstrap,plantation,0.44371620564567377,0.3148716191762207,0.6006043896822805,"293 blocks of 20 km, 999 replicates"
+selection_ratio_block_bootstrap,other,0.233671999347635,0.11086809313250416,0.3919299808447921,"293 blocks of 20 km, 999 replicates"
+GM_Error_Het distance band 6 km,grassland,1.3947776358706199,1.3708944822822156,1.4190768718291111,odds ratio per +10 p.p.; mean neighbours 27.2
+GM_Error_Het distance band 6 km,pasture,1.096381440631265,1.0796957077511096,1.1133250366109488,odds ratio per +10 p.p.; mean neighbours 27.2
+GM_Error_Het distance band 6 km,agriculture,1.1540719522912364,1.1430140110185087,1.1652368721871589,odds ratio per +10 p.p.; mean neighbours 27.2
+GM_Error_Het distance band 6 km,plantation,1.0555807561374708,1.042224790662598,1.0691078764489623,odds ratio per +10 p.p.; mean neighbours 27.2
+GM_Error_Het distance band 6 km,other,1.003255200429461,0.990243687633661,1.0164376807026099,odds ratio per +10 p.p.; mean neighbours 27.2
+GM_Error_Het distance band 10 km,grassland,1.4007025630134768,1.376792935621061,1.4250274091851685,odds ratio per +10 p.p.; mean neighbours 76.5
+GM_Error_Het distance band 10 km,pasture,1.0990418588836177,1.0826455312541126,1.115686503761911,odds ratio per +10 p.p.; mean neighbours 76.5
+GM_Error_Het distance band 10 km,agriculture,1.150272170721652,1.1394680229283018,1.161178760713635,odds ratio per +10 p.p.; mean neighbours 76.5
+GM_Error_Het distance band 10 km,plantation,1.0455681491452244,1.0326113110494193,1.0586875650199525,odds ratio per +10 p.p.; mean neighbours 76.5
+GM_Error_Het distance band 10 km,other,0.9997481642730102,0.9875706261928839,1.0120758611668554,odds ratio per +10 p.p.; mean neighbours 76.5

@@ -1,0 +1,201 @@
+# =============================================================================
+# FINN Santa Catarina Wildfire Emissions Pipeline - shared configuration
+# -----------------------------------------------------------------------------
+# This single file is read by BOTH the R scripts (via yaml::read_yaml) and the
+# Python package (via finn_sc.config.load_config). Edit values here instead of
+# hard-coding them in the scripts, so the R and Python routes stay in sync.
+#
+# Author : Santos-Silva, J. C. (jessica.jcss@gmail.com)
+# Project: Inventario de Emissoes Atmosfericas de Santa Catarina (FAPESC)
+# =============================================================================
+
+# ---- Which FINN product to work with -----------------------------------------
+# Valid versions : "v1.5", "v2.5", "v2.5.1"   (EXACTLY these strings)
+# Valid sensors  : "MODIS", "MODIS+VIIRS"
+# Availability (see docs/methodology.md and the FINN README PDFs):
+#   v1.5         MODIS        2002-2020  (annual GEOS-Chem text files)
+#   v2.5         MODIS        2003-2021  (annual)
+#   v2.5         MODIS+VIIRS  2012-2021  (annual)
+#   v2.5.1       MODIS / MODIS+VIIRS  2022-2023 (monthly)
+#   v2.5.1       MODIS+VIIRS  2024-present (daily near-real-time / "NRT")
+# IMPORTANT: for the 2024+ near-real-time data, the version string is STILL
+# "v2.5.1" - there is NO separate "v2.5.1 NRT" value. "NRT" only describes the
+# daily product; the pipeline switches to the daily NRT files automatically for
+# any date from 2024 onward (with sensor "MODIS+VIIRS"). Writing "v2.5.1 NRT"
+# matches nothing and downloads zero files.
+selection:
+  years: [2019]                 # a single year, or a list e.g. [2019, 2020, 2021]
+                                #   (used ONLY when start_date/end_date are unset)
+  # Optional EXACT date selection (YYYY-MM-DD). Set start_date alone to pick a
+  # single day, or start_date + end_date for a range. When set, this OVERRIDES
+  # `years`. What actually downloads depends on how FINN distributes the period:
+  #     2024 onward  -> daily files  : only the requested day(s) are downloaded
+  #     2022-2023    -> monthly files: only the needed month(s), then trimmed
+  #     2002-2021    -> annual files : the whole year (only granularity offered),
+  #                                    then trimmed to your day(s)
+  # In every case the output keeps only rows within your range and gains a DATE
+  # column. Leave both as ~ (null) to select by whole `years` instead.
+  start_date: ~                 # e.g. "2024-09-01"
+  end_date: ~                   # e.g. "2024-09-15"  (omit / ~ for a single day)
+  version: "v1.5"               # FINN version to download / process
+  sensor: "MODIS"               # satellite sensor combination
+  mechanism: "GEOSCHEM"         # VOC speciation mechanism used by these scripts
+
+# ---- Temporal aggregation resolution -----------------------------------------
+# How finely step 04 buckets emissions in time. It adds a `period` column:
+#   year  -> one row per polygon per YEAR   (period = "2019")      [default]
+#   month -> one row per polygon per MONTH  (period = "2019-06")
+#   day   -> one row per polygon per DAY    (period = "2019-06-15")
+# A `year` column is ALWAYS kept as well, so the descriptive step (05) and any
+# year-based QGIS filters keep working at every resolution.
+# NOTE: "day" over a whole year produces many rows (polygons x days); it pairs
+# best with a date range (selection.start_date / end_date).
+aggregation:
+  time_resolution: "year"       # "day" | "month" | "year"
+
+# ---- Study region: ANY polygon layer (default example: Santa Catarina) -------
+# The pipeline clips and aggregates FINN emissions to whatever polygons you put
+# in `boundaries_shp`. It works for ANY region on Earth - another Brazilian
+# state, a whole country, several countries, a biome or a river basin - i.e. any
+# shapefile of one or more polygons. Santa Catarina (SC) is only the DEFAULT
+# example shipped with the pipeline.
+#
+# To switch regions you normally change just three things:
+#   1) boundaries_shp -> your shapefile,
+#   2) region_field   -> the attribute column to aggregate by,
+#   3) name           -> a label used in messages/figures.
+# The bounding box can auto-derive from your shapefile (bbox: auto), so you
+# usually do NOT need to touch it. See docs/methodology.md and the "Use another
+# region" section of README.md for a worked example.
+region:
+  name: "Santa Catarina"         # label only (used in messages/figures)
+  crs_epsg: 4326                 # WGS84 lon/lat = the native FINN coordinate system
+  # Any polygon shapefile (.shp + .dbf/.shx/.prj). Default: IBGE SC municipalities.
+  # Download separately and place under data/inputs/ (see data/inputs/README).
+  boundaries_shp: "data/inputs/SC_Municipios_2024.shp"
+  region_field: "NM_MUN"         # attribute to group/aggregate by
+                                 #   e.g. "NM_MUN" (IBGE municipality), "shapeName"
+                                 #   or "NAME" for a country/admin layer, etc.
+  code_field: "CD_MUN"           # optional secondary id column; set to ~ (null) if none
+  # Bounding-box pre-filter applied BEFORE the point-in-polygon join:
+  #   auto -> derive from the shapefile's own extent (+ bbox_margin_deg). RECOMMENDED.
+  #   none -> skip the pre-filter; rely only on the polygon join (robust, but slower
+  #           because the whole global FINN cloud is joined).
+  #   explicit degrees, e.g.:  bbox: {lon_min: -54, lon_max: -47, lat_min: -30, lat_max: -24}
+  bbox: auto
+  bbox_margin_deg: 0.5           # margin (degrees) added around the shapefile when bbox: auto
+
+# ---- Folder layout (relative to the project root) ----------------------------
+paths:
+  raw_finn:  "data/raw_finn"    # combined, de-duplicated FINN downloads (per year)
+  interim:   "data/interim"     # unit-converted and SC-clipped intermediates
+  output:    "data/output"      # final aggregated tables, shapefiles and figures
+
+# ---- Download behaviour -------------------------------------------------------
+download:
+  include_source_url: true      # prepend the origin URL as a provenance column
+  min_file_size_kb: 0.5         # skip empty/placeholder files below this size
+  timeout_seconds: 600          # per-file HTTP timeout
+
+# ---- Unit conversion ---------------------------------------------------------
+# FINN native units (official README + empirical check of the files):
+#   gas-phase species (CO2, CO, CH4, H2, SO2, NH3, NO, NO2 and the GEOS-Chem
+#     VOC species)                                   -> mole(species)/day
+#   aerosols (OC, BC, PM25, PM10, TPM, TPC)          -> kg(species)/day
+#   NOXasNO, NMOC and NMHC (aggregate gas fields)    -> kg/day (MASS)
+# 2026-10-03 review: the README sentence "all gas-phase species in mole/day"
+#   does NOT hold for NOXasNO, NMOC and NMHC in the v2.5/v2.5.1 GEOS-Chem
+#   "each fire" files: their implied emission factors, species/(AREA*BMASS),
+#   match Wiedinmyer et al. (2023, GMD 16:3873, Table 4) only when the raw
+#   values are read as kg/day. NMHC was previously converted as a gas
+#   (x 72.00 g/mol / 1e6), which underestimated it by 1000/72 = 13.9x.
+# The pipeline converts every species to METRIC TONNES per reporting period:
+#   gas   : tonnes = mol * molar_mass[g/mol] / 1e6
+#   mass  : tonnes = kg / 1000
+# A species must appear in ONLY ONE of the two lists (checked by the code).
+conversion:
+  target_unit: "tonnes"
+  # Species reported by FINN in kg/day (mass), converted with /1000:
+  # 2026-10-03 review: NMHC added (it is a kg/day mass field, see above).
+  mass_species_kg: ["BC", "OC", "PM25", "PM10", "NOXasNO", "NMOC", "NMHC", "TPM", "TPC"]
+  # Molar masses (g/mol) for gas-phase species reported in mole/day.
+  # Converted with * molar_mass / 1e6.
+  # 2026-10-03 review: values checked against the molecular formulas
+  #   (standard atomic weights; GEOS-Chem species database). Corrected:
+  #   H2 2.02 -> 2.016; GLYC 92.09 -> 60.05; GLYX 86.09 -> 58.04;
+  #   HAC 60.05 -> 74.08; MGLY 74.08 -> 72.06. NMHC removed (kg/day field).
+  #   ALK4 (lumped >=C4 alkanes) and PRPE (lumped >=C3 alkenes) keep the
+  #   GEOS-Chem lumped-species masses (butane 58.12; propene 42.08).
+  molar_mass_g_per_mol:
+    CO2: 44.01
+    CO: 28.01
+    CH4: 16.04
+    H2: 2.016
+    SO2: 64.07
+    NH3: 17.03
+    "NO": 30.01                 # quoted: unquoted NO is a YAML 1.1 boolean (false)
+    NO2: 46.01
+    ACET: 58.08                 # acetone C3H6O
+    ALD2: 44.05
+    ALK4: 58.12
+    BENZ: 78.11
+    C2H2: 26.04
+    C2H4: 28.05
+    C2H6: 30.07
+    C3H8: 44.10
+    CH2O: 30.03
+    GLYC: 60.05                 # glycolaldehyde C2H4O2 (2026-10-03 review: was 92.09)
+    GLYX: 58.04                 # glyoxal C2H2O2        (2026-10-03 review: was 86.09)
+    HAC: 74.08                  # hydroxyacetone C3H6O2 (2026-10-03 review: was 60.05)
+    MEK: 72.11
+    MGLY: 72.06                 # methylglyoxal C3H4O2  (2026-10-03 review: was 74.08)
+    PRPE: 42.08
+    TOLU: 92.14
+    XYLE: 106.17
+
+# ---- Derived quantities and fire counting (2026-10-03 review) -----------------
+# VOC (COV) total = the FINN NMOC field (identified + unidentified non-methane
+#   organic gases, kg/day -> t). It is NOT a sum of the speciated GEOS-Chem
+#   species: NMHC already overlaps the individual hydrocarbons, so summing them
+#   double counts. No speciated "VOC sum" is produced by the pipeline.
+# NOx = NOXasNO (NOx expressed as NO mass). NO and NO2 must never be summed as
+#   "NOx". Step 04 also writes NOx as NO2-equivalent mass when nox_as_no2 = true:
+#   NOx_as_NO2 = NOXasNO * 46.0055 / 30.0061.
+# Fire counting (step 04): `events` = distinct (year, DAY, POLYID) (FINN daily
+#   burned-area polygon), each assigned to the ONE region polygon that holds the
+#   largest share of its AREA; `detections` = distinct (year, DAY, FIREID) (one
+#   point each), assigned the same way; `n_rows` = number of FINN records
+#   (FIREID x GENVEG pieces) - NOT a count of fires. FINN v1.5 has no POLYID /
+#   FIREID, so events/detections are NA for v1.5.
+derived:
+  nox_as_no2: true
+
+# ---- Analysis layer: reproduces every number of the manuscript and of the
+# inventory report from the archived SC records (python/analysis, R/analysis) ----------
+# Inputs are relative to the project root. `records` is the output of the pipeline
+# (steps 00-03 + python/06_build_sc_records.py); the archived copy reproduces the
+# published results bit for bit (see docs/provenance.md and tests/).
+analysis:
+  results_dir: "results"
+  inputs:
+    records: "data/derived/finn_sc_records_2003_2025.csv.gz"
+    municipalities: "data/external/sc_municipios_2024_atributos.csv"
+    municipalities_shp: "data/inputs/SC_Municipios_2024.shp"
+    mapbiomas_fire: "data/external/mapbiomas_fogo_col4_SC_municipal_km2_2012_2024.csv"
+    climate: "data/external/era5land_oni_SC_fire_season_2012_2025.csv"
+    landuse: "data/external/mapbiomas_lulc2023_SC_municipal_fractions.csv"        # provisional: 277 municipalities
+    landuse_all295: "data/external/mapbiomas_lulc2023_SC_municipal_fractions_all295.csv"  # used by a07 when present (gee/mapbiomas_lulc_fractions_all295.ipynb)
+    finn15_2020_records: "data/external/finn15_2020_SC_records.csv"   # FINN v1.5, 2020, records inside SC (a11)
+    legacy_2020: "data/external/legacy_finn15_lcqar_2020.csv"          # LCQAR (2022) totals and FINN v1.5 totals, 2020
+    landcover2019_classes: "data/external/mapbiomas_c10_lulc2019_SC_class_areas.csv"   # MapBiomas C10, 2019, class areas (Figure 1)
+    landcover2023_classes: "data/external/mapbiomas_c10_lulc2023_SC_class_areas.csv"   # MapBiomas C10.1, 2023, class areas (Figure 1)
+    mcd64a1: "data/external/mcd64a1_SC_municipal_km2_2012_2024.csv"          # MCD64A1 C6.1 burned area by municipality (a12; gee/mcd64a1_municipal_2012_2024.ipynb)
+    era5land_serrana: "data/external/era5land_SC_serrana_monthly_2012_2025.csv"  # ERA5-Land monthly, State and Serrana (a12; gee/era5land_serrana_monthly.ipynb)
+  report_year: 2025
+  series_years: [2012, 2025]          # MODIS+VIIRS series analysed in the manuscript
+  screening:
+    radius_km: 1.0                    # main analysis (Giglio et al., 2021: >= 16 days per year)
+    min_days: 16
+    sensitivity_radii_km: [0.75, 1.5]
+  fire_season_months: [7, 8, 9, 10, 11]
+  seed: 20261003                      # permutation tests (Moran's I)

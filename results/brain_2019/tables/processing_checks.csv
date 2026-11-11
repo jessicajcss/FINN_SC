@@ -1,0 +1,2 @@
+dataset,days,cell_days_BRAIN,cell_days_file,cell_days_both,share_BRAIN_CO_in_common_cell_days,share_file_CO_in_common_cell_days,ratio_median,ratio_p05,ratio_p95,share_within_1pct_of_factor,expected_factor
+FINN v1.5 annual file,262,7474,7474,7474,1.0,1.0,1.0099999999966558,1.0099999896589777,1.0100000107867644,0.0,

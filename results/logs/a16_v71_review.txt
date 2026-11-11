@@ -1,0 +1,19 @@
+1. Spearman correlation with July-November precipitation (ERA5-Land, State mean), MODIS+VIIRS screened events, 2012-2025
+   events               rho = -0.684  p = 0.007  n = 14
+   CO2                  rho = -0.710  p = 0.004  n = 14
+   CO2_per_event_t      rho = -0.437  p = 0.118  n = 14
+   area_per_event_km2   rho = -0.670  p = 0.009  n = 14
+   CO2 per event: 640 to 799 t; area per event: 0.423 to 0.531 km2
+
+2. FINN area / mapped area, 2012-2024 (all MODIS+VIIRS records vs screened events)
+   mb: median all 17.24, screened 17.23; screened range 13.3 to 37.6
+   mcd: median all 34.41, screened 34.36; screened range 17.1 to 76.2
+   area of the persistent anomalies: median 0.109%, max 1.760% (2020) of the FINN area
+
+3. FINN v1.5 MODIS 2020: CO2 12.88 Mt; top 5: Lages 726 kt; Caçador 525 kt; Santa Cecília 494 kt; Ponte Alta do Norte 476 kt; São Joaquim 333 kt
+
+3. FINN v2.5 MODIS 2020: CO2 4.56 Mt; top 5: Lages 353 kt; Caçador 192 kt; Ponte Alta do Norte 172 kt; São Joaquim 157 kt; Santa Cecília 133 kt
+
+3. FINN v2.5 MODIS+VIIRS 2020: CO2 6.63 Mt; top 5: Lages 485 kt; São Joaquim 251 kt; Caçador 236 kt; Ponte Alta do Norte 197 kt; Bom Jardim da Serra 186 kt
+   common to the 10 largest, v1.5 and v2.5 MODIS+VIIRS: 6
+   municipal CO2 2020, v1.5 vs v2.5 MODIS+VIIRS: Spearman rho = 0.945 (n = 287)

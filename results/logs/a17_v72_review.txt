@@ -1,0 +1,109 @@
+1. FINN v1.5, 2020, Santa Catarina
+   records 4609; distinct coordinates 2716; records with the same coordinates on the previous day 1893
+   CO2 ratio to the previous-day record at the same coordinates: median 0.500; between 0.45 and 0.55: 1893; area ratio median 1.000
+   originals 2716 (CO2 9.40 Mt; AREA field 2440 km2); continuations 1893 (CO2 3.48 Mt, 27.0% of the total; AREA field 1694 km2, entering the emissions at half: 847 km2)
+   CO of the continuations: 27.0% of the FINN v1.5 CO of 2020
+   FINN v2.5 MODIS 2020: 5643 records, 2689 detections, area 2800 km2, CO2 4.56 Mt; MODIS+VIIRS: area 4146 km2, CO2 6.63 Mt
+   v1.5 originals with a v2.5 MODIS detection on the same day within 2 km: 2268 of 2716 (83.5%); continuations with a v2.5 detection on the previous day: 1838 of 1893 (97.1%); v2.5 detections with a v1.5 original: 2630 of 2689 (97.8%)
+   matched detections, vegetation class v1.5 x v2.5 (1 savanna/grassland, 2 woody savanna, 3 tropical forest, 4 temperate forest, 9 cropland):
+ gv15  gv25   n  CO2_v15_t  CO2_v25_t  area_v15_km2  area_v25_km2  t_CO2_per_km2_v15  t_CO2_per_km2_v25
+    1     1 209   116199.0   188009.9         140.8         202.1              825.2              930.1
+    1     2   6     3181.4     6075.9           4.1           6.1              782.6             1001.9
+    1     4   2     1169.6     2729.9           1.4           1.9              843.2             1458.3
+    1     9  12     6278.5     8701.1           7.8          10.6              800.0              821.0
+    2     1 572   508115.2   538778.2         526.9         561.7              964.4              959.1
+    2     2 196   246600.5   247694.5         184.9         202.1             1333.6             1225.9
+    2     4  64    98389.0   142127.1          61.0          66.0             1612.7             2153.7
+    2     9  16    10934.9    11862.4          13.7          14.8              796.8              799.0
+    3     1 170   478658.6   165671.5         158.2         164.9             3025.3             1004.7
+    3     2 202  1181268.9   291175.9         191.3         209.5             6176.4             1389.8
+    3     4 704  5771338.1  2073787.4         676.2         798.6             8535.5             2596.7
+    3     9   8     5599.8     6005.1           7.1           7.2              788.9              838.7
+    4     1   5     3590.0     4491.9           4.7           4.7              766.1              959.2
+    4     2   3     3702.6     2742.6           2.8           2.8             1315.7              972.4
+    4     4   1      728.1     1379.3           0.9           0.9              771.3             1464.8
+    9     1  67    53735.7    57428.0          44.7          62.2             1202.8              922.9
+    9     2   1      811.5      805.7           0.7           0.9             1202.2              913.4
+    9     4   1     1064.3      770.6           0.7           0.9             1516.9              897.6
+    9     9  29    21201.8    20818.5          18.6          26.3             1141.7              791.4
+   matched: CO2 v1.5 8.51 Mt vs v2.5 3.77 Mt; area 2046 vs 2344 km2
+   decomposition (each step changes one term; the last step reaches the FINN v2.5 MODIS total):
+     FINN v1.5, all records                              12.88 Mt  factor nan
+     without next-day continuations                       9.40 Mt  factor 0.730
+     number of detections as in v2.5 MODIS                9.31 Mt  factor 0.990
+     area per detection as in v2.5 MODIS                 10.78 Mt  factor 1.159
+     CO2 per km2 as in v2.5 MODIS (= FINN v2.5 MODIS)     4.56 Mt  factor 0.423
+   CO2 per km2: v1.5 originals 3852 t/km2; v2.5 MODIS 1630 t/km2; v2.5 MODIS+VIIRS 1599 t/km2
+   share of area by class (v1.5 originals / v2.5 MODIS): crop 3.3/2.5; forest 50.8/37.6; grass 8.2/39.8; wsav 37.7/20.2
+   t CO2/km2 by class (v1.5 / v2.5): crop 1092/775; forest 6628/2654; grass 762/909; wsav 1024/1245
+   area-weighted CO2 per km2 v1.5 originals 3852, v2.5 MODIS 1630; change -2221 t/km2 = class partition -555 (25%) + CO2 per km2 within classes -1666 (75%)
+   FINN v1.5 effective burned area (continuations at half) 3287 km2; CO2 per effective km2 3919 t; forest (codes 3 and 4) share: originals 50.8% of area and 87.4% of CO2; all records (effective) 50.7% of area and 87.4% of CO2
+   FINN v2.5 MODIS forest (code 4) share: 37.6% of area, 61.2% of CO2
+   FINN v1.5 2020 by mesoregion (records unassigned: 0):
+                      records  originals  area_km2  records_per_100km2  originals_per_100km2  pct_records  pct_originals
+Serrana                  2061       1239  22327.95                9.23                  5.55        44.72          45.62
+Sul Catarinense           486        289   9709.02                5.01                  2.98        10.54          10.64
+Oeste Catarinense        1128        656  27314.52                4.13                  2.40        24.47          24.15
+Norte Catarinense         533        308  15930.59                3.35                  1.93        11.56          11.34
+Vale do Itajaí            265        147  13088.96                2.02                  1.12         5.75           5.41
+Grande Florianópolis      136         77   7359.65                1.85                  1.05         2.95           2.84
+   State: 4.81 records and 2.84 originals per 100 km2
+
+2. MapBiomas 2019 group under the event centroid, screened MODIS+VIIRS events 2012-2025, by mesoregion
+   (% of events / % of CO2 / % of the classified area of the mesoregion / ratio)
+   Grande Florianópolis (3370 events): forest 46.3/54.8/62.1/0.75; grassland 3.9/4.7/0.7/5.68; pasture 13.3/10.4/11.1/1.19; agriculture 20.7/15.3/14.3/1.45; plantation 11.8/14.0/6.8/1.74; other 3.9/0.7/5.0/0.78
+   Norte Catarinense (8932 events): forest 32.8/41.9/49.9/0.66; grassland 0.0/0.0/0.0/3.76; pasture 5.8/4.4/5.3/1.09; agriculture 39.4/24.0/28.9/1.36; plantation 18.0/26.9/11.3/1.59; other 4.0/2.7/4.5/0.88
+   Oeste Catarinense (23160 events): forest 24.1/29.8/30.5/0.79; grassland 0.4/0.3/0.2/2.28; pasture 11.7/9.9/10.7/1.09; agriculture 47.3/34.0/45.7/1.03; plantation 14.6/24.5/10.1/1.44; other 2.0/1.4/2.7/0.74
+   Serrana (33291 events): forest 18.7/25.6/32.3/0.58; grassland 42.8/29.6/21.6/1.98; pasture 7.7/7.4/8.6/0.90; agriculture 16.9/13.7/19.0/0.89; plantation 13.0/23.0/16.7/0.78; other 0.8/0.7/1.7/0.49
+   Sul Catarinense (8115 events): forest 28.8/41.2/35.3/0.82; grassland 0.3/0.5/0.2/1.88; pasture 14.8/12.4/17.2/0.86; agriculture 46.7/32.5/35.2/1.33; plantation 5.9/11.5/3.0/1.95; other 3.6/2.0/9.1/0.40
+   Vale do Itajaí (6361 events): forest 34.3/49.1/53.9/0.64; grassland 0.0/0.0/0.0/0.00; pasture 9.4/6.6/9.9/0.95; agriculture 37.5/22.9/25.1/1.49; plantation 15.6/20.3/6.9/2.25; other 3.2/1.2/4.1/0.79
+   State (83229 events): forest 25.0/33.1/40.2/0.62; grassland 17.4/12.6/5.2/3.37; pasture 9.7/8.1/9.9/0.97; agriculture 32.4/22.5/30.5/1.06; plantation 13.4/22.4/10.5/1.28; other 2.1/1.3/3.8/0.55
+
+3. Mesoregion profile (MapBiomas fractions are of the municipal polygon area; IBGE 2022 Census, GDP 2021)
+mesoregion                        Grande Florianópolis  Norte Catarinense  Oeste Catarinense    Serrana  Sul Catarinense  Vale do Itajaí       State
+municipalities                                   21.00              26.00             118.00      30.00            46.00           54.00      295.00
+area_km2                                       7359.65           15930.59           27314.52   22327.95          9709.02        13088.96    95730.68
+area_pct_state                                    7.69              16.64              28.53      23.32            10.14           13.67      100.00
+pop2022                                     1326902.00         1446326.00         1358188.00  423004.00       1080509.00      1975432.00  7610361.00
+pop_density_per_km2                             180.29              90.79              49.72      18.95           111.29          150.92       79.50
+gdp2021_billion_BRL                              56.84              99.98              71.58      18.82            45.45          135.89      428.57
+gdp2021_per_capita_kBRL                          42.84              69.13              52.70      44.50            42.07           68.79       56.31
+agro_pct_of_vab2021                               2.63               4.19              14.40      19.88             8.13            3.05        6.74
+forest_pct_2023                                  58.92              48.52              29.96      31.86            34.14           53.52       39.36
+grassland_pct_2023                                0.77               0.24               0.14      24.00             0.20            0.02        5.76
+pasture_pct_2023                                  8.86               4.48              11.41       6.86            12.32            7.73        8.59
+agriculture_pct_2023                             15.75              29.92              44.73      17.86            39.77           26.51       30.78
+silviculture_pct_2023                             6.52              11.87              10.61      17.49             3.12            7.14       10.88
+events_2025                                     160.00             472.00            1255.00    2333.00           511.00          390.00     5121.00
+events_per_100km2_2025                            2.17               2.96               4.59      10.45             5.26            2.98        5.35
+events_per_100km2_mean_2012_2025                  3.27               4.00               6.06      10.65             5.97            3.47        6.21
+finn_area_pct_2025                                0.70               1.17               2.16       4.78             1.93            1.21        2.34
+CO2_kt_2025                                      99.67             323.02             940.03    1652.58           262.91          276.55     3554.77
+CO2_t_per_km2_2025                               13.54              20.28              34.42      74.01            27.08           21.13       37.13
+CO2_t_per_capita_2025                             0.08               0.22               0.69       3.91             0.24            0.14        0.47
+
+3b. Municipalities among the five largest in events, FINN area or CO2 in 2025
+municipality                        Lages São José do Cerrito        Lebon Régis Curitibanos São Joaquim          Água Doce Capão Alto Bom Jardim da Serra
+mesoregion                        Serrana             Serrana  Oeste Catarinense     Serrana     Serrana  Oeste Catarinense    Serrana             Serrana
+area_km2                          2637.66              948.71             941.64      949.99     1888.63            1327.91    1331.96              938.52
+pop2022                            164981                8708              11472       40045       25939               6508       2625                4026
+pop_density_per_km2                 62.55                9.18              12.18       42.15       13.73                4.9       1.97                4.29
+gdp2021_billion_BRL                  6.58                0.32               0.42        1.88        1.13               0.65       0.24                0.37
+gdp2021_per_capita_kBRL             39.87               36.61              36.33       46.83       43.69             100.04      89.53               92.31
+agro_pct_of_vab2021                  4.14               50.44              42.03        6.92       44.57              31.72      52.05               43.58
+forest_pct_2023                     19.01               31.57              37.42       27.39       29.28              23.78      28.42               35.65
+grassland_pct_2023                   51.5                6.13                0.0         0.0       61.86               2.08      45.69               60.33
+pasture_pct_2023                      2.5               14.64              11.98       13.37        0.93              17.92       0.69                0.61
+agriculture_pct_2023                 7.39               26.29              23.73       38.77         2.7              35.77       5.74                1.02
+silviculture_pct_2023               16.96               18.17              25.98       17.02        4.22              15.77      18.21                2.04
+events_2025                           429                 142                 70         137         340                169        182                 144
+events_per_100km2_2025              16.26               14.97               7.43       14.42        18.0              12.73      13.66               15.34
+events_per_100km2_mean_2012_2025    16.32               13.15               9.57        9.44       18.83              11.06      12.74               15.35
+finn_area_pct_2025                   6.87                9.67               6.49         7.9        6.42               6.79       5.99                5.83
+CO2_kt_2025                        223.45              149.04             148.27      144.21      141.24             112.77     111.55               69.35
+CO2_t_per_km2_2025                  84.71              157.09             157.46       151.8       74.78              84.93      83.75               73.89
+CO2_t_per_capita_2025                1.35               17.12              12.92         3.6        5.45              17.33       42.5               17.22
+rank_events_2025                        1                   6                 13           7           2                  4          3                   5
+rank_area_2025                          1                   3                  7           6           2                  4          5                   8
+rank_CO2_2025                           1                   2                  3           4           5                  6          7                   9
+   these 8 municipalities: 11.5% of the State area, 3.5% of the population, 31.5% of the 2025 events and 30.9% of the 2025 CO2

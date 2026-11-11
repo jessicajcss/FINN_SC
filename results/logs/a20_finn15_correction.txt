@@ -1,0 +1,90 @@
+1. Earlier state inventory (LCQAR, 2022) vs FINN v1.5 records of 2020 in SC
+   CO2 (t): LCQAR 12,909,573.0; FINN v1.5 all 12,883,690.6; originals 9,399,077.6; LCQAR/all 1.0020; LCQAR/originals 1.3735; continuation share 0.2705
+   CO (t): LCQAR 699,668.0; FINN v1.5 all 698,281.3; originals 509,436.1; LCQAR/all 1.0020; LCQAR/originals 1.3734; continuation share 0.2704
+   PM25 (t): LCQAR 70,724.0; FINN v1.5 all 70,585.7; originals 51,500.7; LCQAR/all 1.0020; LCQAR/originals 1.3733; continuation share 0.2704
+   count (LCQAR: focos de calor): LCQAR 4,625.0; FINN v1.5 all 4,609.0; originals 2,716.0; LCQAR/all 1.0035; LCQAR/originals 1.7029; continuation share 0.4107
+   area field, km2 (LCQAR: about 4.1 thousand km2): LCQAR nan; FINN v1.5 all 4,134.6; originals 2,440.4; LCQAR/all nan; LCQAR/originals nan; continuation share 0.4098
+   area entering the emissions, km2: LCQAR nan; FINN v1.5 all 3,287.5; originals 2,440.4; LCQAR/all nan; LCQAR/originals nan; continuation share 0.2577
+   NOx: LCQAR 38,037 t vs NO + NO2 of all records 37,962 t (legacy table); NOx is not in the per-record file, so the corrected NOx is not computed
+   FINN v1.5 / FINN v2.5 MODIS (CO2, 2020): all records 2.823; originals 2.059
+   FINN v1.5 / FINN v2.5 MODIS+VIIRS (CO2, 2020; Figure 9): all records 1.943; originals 1.417
+2. BRAIN 2020 vs FINN v1.5 2020, 4 km cells entirely inside SC
+   FINN v1.5 all records: CO BRAIN 588,325 t vs 672,077 t (BRAIN/product 0.875); PM2.5 62,691 vs 67,961 t (0.922); cell-day CO ratio median 1.037; share of BRAIN CO on common cell-days 0.944
+   FINN v1.5 original detections: CO BRAIN 588,325 t vs 490,873 t (BRAIN/product 1.199); PM2.5 62,691 vs 49,639 t (1.263); cell-day CO ratio median 1.040; share of BRAIN CO on common cell-days 0.689
+   BRAIN 2019 / FINN v1.5 2019 annual file, every cell-day: median 1.0100 (7474 cell-days); correction not computed (2019 FINN v1.5 records not in the repository)
+3. FINN v2.5 / v2.5.1 records of this inventory: same coordinates as on the previous day
+   v2.5 MODIS (2003-2021): 51,953 day-location pairs; same location as the previous day 3 (0.0099% of CO2); with half the CO2 0 (0.0000% of CO2)
+   v2.5.1 MODIS (2022-2023): 2,957 day-location pairs; same location as the previous day 0 (0.0000% of CO2); with half the CO2 0 (0.0000% of CO2)
+   v2.5 MODIS+VIIRS (2012-2021): 74,480 day-location pairs; same location as the previous day 28 (0.0435% of CO2); with half the CO2 1 (0.0009% of CO2)
+   v2.5.1 MODIS+VIIRS (2022-2025): 22,053 day-location pairs; same location as the previous day 6 (0.0120% of CO2); with half the CO2 0 (0.0000% of CO2)
+4. Teixeira et al. (2025), FINN v1.5 2002-2017 (Table C.1), vs FINN v2.5 MODIS of this inventory, 2003-2017
+   CO2: Teixeira / FINN v2.5 MODIS, 2003-2017: median 1.724 (range 1.237-2.676); Spearman rho between the annual series 0.971 (p = 1.7e-09); 2020 FINN v1.5 / FINN v2.5 MODIS: all records 2.823, original detections 2.059
+   CO: Teixeira / FINN v2.5 MODIS, 2003-2017: median 1.514 (range 1.053-2.260); Spearman rho between the annual series 0.979 (p = 2.6e-10); 2020 FINN v1.5 / FINN v2.5 MODIS: all records 2.367, original detections 1.727
+   PM25: Teixeira / FINN v2.5 MODIS, 2003-2017: median 1.282 (range 0.891-1.922); Spearman rho between the annual series 0.975 (p = 7.1e-10); 2020 FINN v1.5 / FINN v2.5 MODIS: all records 2.002, original detections 1.461
+   2003: CO2 ratio 1.729; CO 1.518; PM2.5 1.287
+   2004: CO2 ratio 1.724; CO 1.514; PM2.5 1.282
+   2005: CO2 ratio 1.940; CO 1.714; PM2.5 1.443
+   2006: CO2 ratio 1.859; CO 1.653; PM2.5 1.394
+   2007: CO2 ratio 2.020; CO 1.813; PM2.5 1.529
+   2008: CO2 ratio 1.602; CO 1.445; PM2.5 1.218
+   2009: CO2 ratio 1.765; CO 1.625; PM2.5 1.385
+   2010: CO2 ratio 1.392; CO 1.265; PM2.5 1.083
+   2011: CO2 ratio 1.432; CO 1.278; PM2.5 1.090
+   2012: CO2 ratio 1.470; CO 1.295; PM2.5 1.103
+   2013: CO2 ratio 1.589; CO 1.368; PM2.5 1.140
+   2014: CO2 ratio 1.237; CO 1.053; PM2.5 0.891
+   2015: CO2 ratio 1.302; CO 1.130; PM2.5 0.960
+   2016: CO2 ratio 2.363; CO 2.099; PM2.5 1.814
+   2017: CO2 ratio 2.676; CO 2.260; PM2.5 1.922
+5. FINN v1.5 records of 2019 in SC: next-day continuations, and BRAIN 2019 with and without them
+   records 3491: 2042 original detections, 1449 continuations; CO2 8,321,029 t, without continuations 6,031,687 t (continuation share 0.2751)
+   BRAIN 2019 / FINN v1.5 all records: CO 428,043 / 423,805 t = 1.010; PM2.5 1.010; cell-day CO ratio median 1.0100; share of BRAIN CO on common cell-days 1.000
+   BRAIN 2019 / FINN v1.5 original detections: CO 428,043 / 307,998 t = 1.390; PM2.5 1.390; cell-day CO ratio median 1.0100; share of BRAIN CO on common cell-days 0.731
+   (rows BRAIN 2019 / ...: column all_records = CO ratio, original_detections = PM2.5 ratio, continuation_share = share of BRAIN CO on common cell-days)
+6. Authors' aggregated file (aggregated_emissions_all.csv, 5 Feb 2026) against this inventory, FINN v1.5 records and Teixeira et al. (2025)
+   FINN v2.5 / v2.5.1, municipality x year x configuration: 8827 rows, 8595 equal to this inventory within 0.001 t; different: {('v2.5', 'MODIS', 2011): 232} (file / inventory 2.000000 to 2.000000)
+   v1.5 2002: file CO2 nan t vs Teixeira 8,272,774 t (ratio nan)
+   v1.5 2003: file CO2 19,516,364 t vs Teixeira 19,516,364 t (ratio 1.0000)
+   v1.5 2004: file CO2 nan t vs Teixeira 13,073,243 t (ratio nan)
+   v1.5 2005: file CO2 10,534,264 t vs Teixeira 10,534,264 t (ratio 1.0000)
+   v1.5 2006: file CO2 14,095,929 t vs Teixeira 14,095,929 t (ratio 1.0000)
+   v1.5 2007: file CO2 7,937,856 t vs Teixeira 7,937,856 t (ratio 1.0000)
+   v1.5 2008: file CO2 5,487,300 t vs Teixeira 5,487,300 t (ratio 1.0000)
+   v1.5 2009: file CO2 5,593,162 t vs Teixeira 5,593,162 t (ratio 1.0000)
+   v1.5 2010: file CO2 4,500,786 t vs Teixeira 4,500,308 t (ratio 1.0001)
+   v1.5 2011: file CO2 3,816,970 t vs Teixeira 3,816,970 t (ratio 1.0000)
+   v1.5 2012: file CO2 4,119,132 t vs Teixeira 4,119,132 t (ratio 1.0000)
+   v1.5 2013: file CO2 4,378,834 t vs Teixeira 4,378,834 t (ratio 1.0000)
+   v1.5 2014: file CO2 2,460,764 t vs Teixeira 2,460,764 t (ratio 1.0000)
+   v1.5 2015: file CO2 1,943,380 t vs Teixeira 1,943,380 t (ratio 1.0000)
+   v1.5 2016: file CO2 1,943,380 t vs Teixeira 9,593,143 t (ratio 0.2026)
+   v1.5 2017: file CO2 1,943,380 t vs Teixeira 9,767,661 t (ratio 0.1990)
+   FINN v1.5 years of the file identical to 2015: [2016, 2017]; years missing from the file: [2002, 2004]
+   v1.5 2019: file 3491 records, CO2 8,321,029.3 t; records in this repository 3491, CO2 8,321,029.3 t
+   v1.5 2020: file 4609 records, CO2 12,883,690.6 t; records in this repository 4609, CO2 12,883,690.6 t
+7. FINN v1.5 records of SC 2002-2020: next-day continuations by year, Teixeira et al. (2025), FINN v2.5 MODIS
+   2002: NCAR annual file (filtered_points_2002_MODIS_v1.5_converted_within_grid_ncar.txt)
+   2016: NCAR annual file (filtered_points_2016_MODIS_v1.5_converted_within_grid_ncar.txt); authors: filtered_points_2016_MODIS_v1.5_converted_within_grid_newfuncao.txt identical to 2015
+   2017: NCAR annual file (filtered_points_2017_MODIS_v1.5_converted_within_grid_ncar.txt); authors: filtered_points_2017_MODIS_v1.5_converted_within_grid_newfuncao.txt identical to 2015
+   2015: check with the ncar file: 860 records, CO2 1,943,379.6 t (used: 860 records, CO2 1,943,379.6 t)
+   2009: 7641 duplicate lines and 1 malformed lines dropped
+   2002: 3431 records, 1577 continuations (30.8% of CO2); CO2 all 8.273 Mt, without continuations 5.722 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS nan -> nan
+   2003: 8122 records, 3522 continuations (29.2% of CO2); CO2 all 19.516 Mt, without continuations 13.817 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.73 -> 1.22
+   2004: 5379 records, 2237 continuations (27.6% of CO2); CO2 all 13.073 Mt, without continuations 9.462 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.72 -> 1.25
+   2005: 3870 records, 1677 continuations (28.5% of CO2); CO2 all 10.534 Mt, without continuations 7.528 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.94 -> 1.39
+   2006: 5248 records, 2245 continuations (28.6% of CO2); CO2 all 14.096 Mt, without continuations 10.070 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.86 -> 1.33
+   2007: 3096 records, 1330 continuations (28.4% of CO2); CO2 all 7.938 Mt, without continuations 5.684 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 2.02 -> 1.45
+   2008: 2060 records, 878 continuations (28.4% of CO2); CO2 all 5.487 Mt, without continuations 3.928 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.60 -> 1.15
+   2009: 2416 records, 1063 continuations (29.8% of CO2); CO2 all 5.593 Mt, without continuations 3.928 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.77 -> 1.24
+   2010: 2115 records, 976 continuations (30.7% of CO2); CO2 all 4.501 Mt, without continuations 3.118 Mt; Teixeira / all records 0.9999; v1.5/v2.5 MODIS 1.39 -> 0.96
+   2011: 1720 records, 761 continuations (28.9% of CO2); CO2 all 3.817 Mt, without continuations 2.713 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.43 -> 1.02
+   2012: 1861 records, 808 continuations (28.7% of CO2); CO2 all 4.119 Mt, without continuations 2.939 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.47 -> 1.05
+   2013: 1741 records, 727 continuations (27.2% of CO2); CO2 all 4.379 Mt, without continuations 3.187 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.59 -> 1.16
+   2014: 1160 records, 566 continuations (32.4% of CO2); CO2 all 2.461 Mt, without continuations 1.664 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.24 -> 0.84
+   2015: 860 records, 375 continuations (29.3% of CO2); CO2 all 1.943 Mt, without continuations 1.373 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 1.30 -> 0.92
+   2016: 4545 records, 2022 continuations (29.6% of CO2); CO2 all 9.627 Mt, without continuations 6.776 Mt; Teixeira / all records 0.9964; v1.5/v2.5 MODIS 2.37 -> 1.67
+   2017: 3738 records, 1748 continuations (31.4% of CO2); CO2 all 9.768 Mt, without continuations 6.696 Mt; Teixeira / all records 1.0000; v1.5/v2.5 MODIS 2.68 -> 1.83
+   2018: 2660 records, 1141 continuations (28.7% of CO2); CO2 all 7.176 Mt, without continuations 5.117 Mt; v1.5/v2.5 MODIS 3.05 -> 2.17
+   2019: 3491 records, 1449 continuations (27.5% of CO2); CO2 all 8.321 Mt, without continuations 6.032 Mt; v1.5/v2.5 MODIS 2.72 -> 1.97
+   2020: 4609 records, 1893 continuations (27.0% of CO2); CO2 all 12.884 Mt, without continuations 9.399 Mt; v1.5/v2.5 MODIS 2.82 -> 2.06
+   continuation share of CO2, 2002-2020 (19 years): median 28.7% (range 27.0%-32.4%)

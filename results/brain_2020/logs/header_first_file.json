@@ -1,0 +1,677 @@
+{
+  "attrs": {
+    "CDATE": 2023264,
+    "CTIME": 163428,
+    "WDATE": 2023264,
+    "WTIME": 163435,
+    "FTYPE": 1,
+    "VGTYP": 7,
+    "GDNAM": "SC_2019",
+    "VGTOP": 5000.0,
+    "VGLVLS": [
+      1.0,
+      0.0
+    ],
+    "NLAYS": 19,
+    "UPNAM": "GRIDDESC",
+    "EXEC_ID": "GRIDDESC",
+    "FILEDESC": "GRIDDESC",
+    "HISTORY": "made from /home/artaxo/CMAQ_REPO/data/mcip/SC_2019/GRIDDESC",
+    "SDATE": 2020001,
+    "STIME": 0,
+    "TSTEP": 10000,
+    "NVARS": 28,
+    "VAR-LIST": "FORM            IOLE            KET             PNO3            POC             ACET            PAR             ETHA            PRPA            ECH4            GLY             MGLY            GLYC            PMOTHR          NO2             BENZENE         NO              ALD2            CO              ETHY            PSO4            HAC             TOL             NH3             ETHE            SO2             PEC             XYL",
+    "GDTYP": 7,
+    "P_ALP": 0.0,
+    "P_BET": 0.0,
+    "P_GAM": -54.857,
+    "XCENT": -54.857,
+    "YCENT": 0.0,
+    "PRJNAME": "Mercator",
+    "XORIG": -105999.812,
+    "YORIG": -3507558.25,
+    "XCELL": 4000.0,
+    "YCELL": 4000.0,
+    "NCOLS": 233,
+    "NROWS": 243,
+    "NTHIK": 1,
+    "Conventions": "CF-1.6",
+    "IOAPI_VERSION": "N/A"
+  },
+  "dims": {
+    "TSTEP": 25,
+    "DATE-TIME": 2,
+    "VAR": 28,
+    "LAY": 19,
+    "ROW": 243,
+    "COL": 233,
+    "tnv": 2,
+    "nv": 4
+  },
+  "variables": {
+    "CO": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "CO",
+      "var_desc": "CO"
+    },
+    "NO": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "NO",
+      "var_desc": "NO"
+    },
+    "NO2": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "NO2",
+      "var_desc": "NO2"
+    },
+    "SO2": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "SO2",
+      "var_desc": "SO2"
+    },
+    "NH3": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "NH3",
+      "var_desc": "NH3"
+    },
+    "ECH4": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "ECH4",
+      "var_desc": "CH4"
+    },
+    "ACET": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "ACET",
+      "var_desc": "ACET"
+    },
+    "ALD2": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "ALD2",
+      "var_desc": "ALD2"
+    },
+    "BENZENE": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "BENZENE",
+      "var_desc": "BENZ"
+    },
+    "PAR": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "PAR",
+      "var_desc": "ALK4"
+    },
+    "ETHY": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "ETHY",
+      "var_desc": "C2H2"
+    },
+    "ETHE": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "ETHE",
+      "var_desc": "C2H4"
+    },
+    "ETHA": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "ETHA",
+      "var_desc": "C2H6"
+    },
+    "PRPA": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "PRPA",
+      "var_desc": "C3H8"
+    },
+    "FORM": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "FORM",
+      "var_desc": "CH2O"
+    },
+    "GLY": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "GLY",
+      "var_desc": "GLYX"
+    },
+    "GLYC": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "GLYC",
+      "var_desc": "GLYC"
+    },
+    "HAC": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "HAC",
+      "var_desc": "HAC"
+    },
+    "MGLY": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "MGLY",
+      "var_desc": "MGLY"
+    },
+    "KET": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "KET",
+      "var_desc": "MEK"
+    },
+    "IOLE": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "IOLE",
+      "var_desc": "PRPE"
+    },
+    "TOL": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "TOL",
+      "var_desc": "TOLU"
+    },
+    "XYL": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "moles/s",
+      "long_name": "XYL",
+      "var_desc": "XYLE"
+    },
+    "POC": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "g/s",
+      "long_name": "POC",
+      "var_desc": "OC"
+    },
+    "PEC": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "g/s",
+      "long_name": "PEC",
+      "var_desc": "BC"
+    },
+    "PSO4": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "g/s",
+      "long_name": "PSO4",
+      "var_desc": "PM25"
+    },
+    "PNO3": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "g/s",
+      "long_name": "PNO3",
+      "var_desc": "PM25"
+    },
+    "PMOTHR": {
+      "dims": [
+        "TSTEP",
+        "LAY",
+        "ROW",
+        "COL"
+      ],
+      "shape": [
+        25,
+        19,
+        243,
+        233
+      ],
+      "dtype": "float32",
+      "units": "g/s",
+      "long_name": "PMOTHR",
+      "var_desc": "PM25"
+    },
+    "TFLAG": {
+      "dims": [
+        "TSTEP",
+        "VAR",
+        "DATE-TIME"
+      ],
+      "shape": [
+        25,
+        28,
+        2
+      ],
+      "dtype": "int32",
+      "units": "<YYYYDDD,HHMMSS>",
+      "long_name": "TFLAG",
+      "var_desc": "Timestep-valid flags:  (1) YYYYDDD or (2) HHMMSS"
+    }
+  },
+  "data_model": "NETCDF3_CLASSIC",
+  "tflag": [
+    [
+      2020001,
+      0
+    ],
+    [
+      2020001,
+      10000
+    ],
+    [
+      2020001,
+      20000
+    ],
+    [
+      2020001,
+      30000
+    ],
+    [
+      2020001,
+      40000
+    ],
+    [
+      2020001,
+      50000
+    ],
+    [
+      2020001,
+      60000
+    ],
+    [
+      2020001,
+      70000
+    ],
+    [
+      2020001,
+      80000
+    ],
+    [
+      2020001,
+      90000
+    ],
+    [
+      2020001,
+      100000
+    ],
+    [
+      2020001,
+      110000
+    ],
+    [
+      2020001,
+      120000
+    ],
+    [
+      2020001,
+      130000
+    ],
+    [
+      2020001,
+      140000
+    ],
+    [
+      2020001,
+      150000
+    ],
+    [
+      2020001,
+      160000
+    ],
+    [
+      2020001,
+      170000
+    ],
+    [
+      2020001,
+      180000
+    ],
+    [
+      2020001,
+      190000
+    ],
+    [
+      2020001,
+      200000
+    ],
+    [
+      2020001,
+      210000
+    ],
+    [
+      2020001,
+      220000
+    ],
+    [
+      2020001,
+      230000
+    ],
+    [
+      2020002,
+      0
+    ]
+  ]
+}

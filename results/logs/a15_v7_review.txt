@@ -1,0 +1,55 @@
+a15 - robustness checks of the English manuscript v7
+interannual events 2012-2025: mean 5945.43; SD 1307.45; CV 22.0%; max/min 2.338 (2016/2015)
+interannual area_km2 2012-2025: mean 2778.68; SD 788.624; CV 28.4%; max/min 2.674 (2020/2015)
+interannual CO2 2012-2025: mean 4.20584e+06; SD 1.18823e+06; CV 28.3%; max/min 2.883 (2020/2015)
+interannual PM25 2012-2025: mean 31017.8; SD 8722.7; CV 28.1%; max/min 3.035 (2020/2015)
+MK events 2012-2025: n 14; S -11; exact p 0.591; Sen -45.71 (95% CI -275 to 132); -0.77% of the mean per year (CI -4.63 to 2.22)
+MK events 2012-2021: n 10; S 13; exact p 0.291; Sen 132 (95% CI -294.2 to 560); 2.11% of the mean per year (CI -4.70 to 8.95)
+MK area_km2 2012-2025: n 14; S -9; exact p 0.667; Sen -35.32 (95% CI -158.7 to 87.73); -1.27% of the mean per year (CI -5.71 to 3.16)
+MK area_km2 2012-2021: n 10; S 15; exact p 0.216; Sen 121.2 (95% CI -94.28 to 348.6); 4.05% of the mean per year (CI -3.15 to 11.64)
+MK CO2 2012-2025: n 14; S -7; exact p 0.747; Sen -3.526e+04 (95% CI -2.267e+05 to 1.419e+05); -0.84% of the mean per year (CI -5.39 to 3.37)
+MK CO2 2012-2021: n 10; S 13; exact p 0.291; Sen 2.221e+05 (95% CI -1.478e+05 to 5.332e+05); 4.95% of the mean per year (CI -3.30 to 11.89)
+MK PM25 2012-2025: n 14; S -3; exact p 0.914; Sen -123.1 (95% CI -1615 to 1062); -0.40% of the mean per year (CI -5.21 to 3.42)
+MK PM25 2012-2021: n 10; S 15; exact p 0.216; Sen 2083 (95% CI -786.6 to 3685); 6.35% of the mean per year (CI -2.40 to 11.24)
+Jul-Nov precipitation, mean of the v2.5 years (2012-2021) 637 mm; v2.5.1 years (2022-2025) 782 mm
+climate events vs precip_mm_fs: v2.5 only rho -0.648 (p 0.043); partial (version) rho -0.593 (p 0.033)
+climate events vs soil_moist_fs: v2.5 only rho -0.527 (p 0.117); partial (version) rho -0.568 (p 0.043)
+climate events vs VPD_kPa_fs: v2.5 only rho 0.503 (p 0.138); partial (version) rho 0.486 (p 0.092)
+climate events vs ONI_fs: v2.5 only rho -0.794 (p 0.006); partial (version) rho -0.653 (p 0.016)
+climate area_km2 vs precip_mm_fs: v2.5 only rho -0.709 (p 0.022); partial (version) rho -0.627 (p 0.022)
+climate area_km2 vs soil_moist_fs: v2.5 only rho -0.576 (p 0.082); partial (version) rho -0.595 (p 0.032)
+climate area_km2 vs VPD_kPa_fs: v2.5 only rho 0.576 (p 0.082); partial (version) rho 0.526 (p 0.065)
+climate area_km2 vs ONI_fs: v2.5 only rho -0.818 (p 0.004); partial (version) rho -0.663 (p 0.014)
+climate CO2 vs precip_mm_fs: v2.5 only rho -0.673 (p 0.033); partial (version) rho -0.637 (p 0.019)
+climate CO2 vs soil_moist_fs: v2.5 only rho -0.648 (p 0.043); partial (version) rho -0.650 (p 0.016)
+climate CO2 vs VPD_kPa_fs: v2.5 only rho 0.624 (p 0.054); partial (version) rho 0.574 (p 0.040)
+climate CO2 vs ONI_fs: v2.5 only rho -0.782 (p 0.008); partial (version) rho -0.623 (p 0.023)
+VIIRS CO2 increment vs MODIS events (shared denominator), 2012-2023 (v2.5 and v2.5.1): rho -0.587 (p 0.045; n 12)
+VIIRS CO2 increment vs MapBiomas Fire area, 2012-2023 (v2.5 and v2.5.1): rho -0.343 (p 0.276; n 12)
+VIIRS CO2 increment vs MCD64A1 area, 2012-2023 (v2.5 and v2.5.1): rho -0.028 (p 0.931; n 12)
+VIIRS CO2 increment vs Jul-Nov precipitation, 2012-2023 (v2.5 and v2.5.1): rho 0.196 (p 0.542; n 12)
+VIIRS CO2 increment vs MODIS events (shared denominator), 2012-2021 (v2.5): rho -0.842 (p 0.002; n 10)
+VIIRS CO2 increment vs MapBiomas Fire area, 2012-2021 (v2.5): rho -0.515 (p 0.128; n 10)
+VIIRS CO2 increment vs MCD64A1 area, 2012-2021 (v2.5): rho -0.467 (p 0.174; n 10)
+VIIRS CO2 increment vs Jul-Nov precipitation, 2012-2021 (v2.5): rho 0.612 (p 0.060; n 10)
+log(MODIS+VIIRS CO2) on log(MODIS CO2), 2012-2023: slope 0.934 (SE 0.025)
+log(MODIS+VIIRS events) on log(MODIS events), 2012-2023: slope 0.803 (SE 0.070)
+scenario 2012: FINN 4.153 Mt; MapBiomas state 0.110 / municipal 0.092 Mt; MCD64A1 state 0.054 / municipal 0.048 Mt
+scenario 2013: FINN 4.065 Mt; MapBiomas state 0.187 / municipal 0.162 Mt; MCD64A1 state 0.101 / municipal 0.082 Mt
+scenario 2014: FINN 3.108 Mt; MapBiomas state 0.123 / municipal 0.095 Mt; MCD64A1 state 0.090 / municipal 0.074 Mt
+scenario 2015: FINN 2.300 Mt; MapBiomas state 0.161 / municipal 0.133 Mt; MCD64A1 state 0.081 / municipal 0.080 Mt
+scenario 2016: FINN 5.939 Mt; MapBiomas state 0.447 / municipal 0.379 Mt; MCD64A1 state 0.347 / municipal 0.289 Mt
+scenario 2017: FINN 5.264 Mt; MapBiomas state 0.343 / municipal 0.272 Mt; MCD64A1 state 0.120 / municipal 0.102 Mt
+scenario 2018: FINN 3.600 Mt; MapBiomas state 0.233 / municipal 0.196 Mt; MCD64A1 state 0.122 / municipal 0.099 Mt
+scenario 2019: FINN 4.579 Mt; MapBiomas state 0.342 / municipal 0.286 Mt; MCD64A1 state 0.230 / municipal 0.187 Mt
+scenario 2020: FINN 6.631 Mt; MapBiomas state 0.363 / municipal 0.319 Mt; MCD64A1 state 0.144 / municipal 0.125 Mt
+scenario 2021: FINN 5.200 Mt; MapBiomas state 0.256 / municipal 0.228 Mt; MCD64A1 state 0.159 / municipal 0.138 Mt
+scenario 2022: FINN 3.487 Mt; MapBiomas state 0.202 / municipal 0.175 Mt; MCD64A1 state 0.075 / municipal 0.063 Mt
+scenario 2023: FINN 3.325 Mt; MapBiomas state 0.175 / municipal 0.155 Mt; MCD64A1 state 0.056 / municipal 0.048 Mt
+scenario 2024: FINN 3.677 Mt; MapBiomas state 0.275 / municipal 0.254 Mt; MCD64A1 state 0.173 / municipal 0.165 Mt
+municipal / State scale, MapBiomas 0.773 to 0.924; MCD64A1 0.808 to 0.988
+Figure 9 finn_v15: 1.943 to 1.943 (median 1.943; n 1)
+Figure 9 interannual: 0.547 to 1.577 (median 0.920; n 14)
+Figure 9 mapbiomas_area: 0.027 to 0.075 (median 0.058; n 13)
+Figure 9 mcd64a1_area: 0.013 to 0.058 (median 0.029; n 13)
+Figure 9 modis_only: 0.640 to 0.716 (median 0.681; n 12)

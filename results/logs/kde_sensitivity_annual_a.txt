@@ -1,0 +1,8 @@
+2025: events 5160, flagged 39, analysed 5121 (kde_events.R: 5160 / 39 / 5121)
+A | ppl       sigma    2774 m: Serrana mean 10.37 (rank 1; next: Sul Catarinense 5.39); Serrana share of top 10% = 72.9%, top 1% = 93.6%; r vs main = 1.000
+A | CvL       sigma    8758 m: Serrana mean 10.30 (rank 1; next: Sul Catarinense 5.53); Serrana share of top 10% = 93.3%, top 1% = 100.0%; r vs main = 0.826
+A | scott     sigma   21719 m: Serrana mean 10.15 (rank 1; next: Sul Catarinense 5.57); Serrana share of top 10% = 100.0%, top 1% = 100.0%; r vs main = 0.697
+A | diggle    sigma     755 m: Serrana mean 10.43 (rank 1; next: Sul Catarinense 5.31); Serrana share of top 10% = 48.5%, top 1% = 66.7%; r vs main = 0.627
+A | fixed_2km sigma    2000 m: Serrana mean 10.38 (rank 1; next: Sul Catarinense 5.36); Serrana share of top 10% = 65.7%, top 1% = 88.5%; r vs main = 0.970
+A | fixed_4km sigma    4000 m: Serrana mean 10.34 (rank 1; next: Sul Catarinense 5.44); Serrana share of top 10% = 80.9%, top 1% = 93.2%; r vs main = 0.970
+A | fixed_8km sigma    8000 m: Serrana mean 10.30 (rank 1; next: Sul Catarinense 5.53); Serrana share of top 10% = 92.1%, top 1% = 100.0%; r vs main = 0.841

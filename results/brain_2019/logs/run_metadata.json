@@ -1,0 +1,91 @@
+{
+  "created": "2026-11-01 20:36:19 UTC",
+  "brain_core": "1.0.0",
+  "python": "3.13.18",
+  "packages": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "netCDF4": "1.7.5.1.post1",
+    "pyproj": "3.8.0",
+    "shapely": "2.2.0",
+    "geopandas": "1.2.0",
+    "scipy": "1.16.3",
+    "PseudoNetCDF": "3.5.0",
+    "pseudonetcdf": "3.5.0"
+  },
+  "settings": {
+    "YEAR": 2019,
+    "EARTH_RADIUS_M": 6370000.0,
+    "INTERIOR_MIN_FRACTION": 0.999,
+    "CROP": [
+      19,
+      133,
+      51,
+      211
+    ],
+    "BLOCK_DAYS": 7,
+    "N_BOOT": 2000,
+    "SEED": 20261101,
+    "ONLY_DATES": null
+  },
+  "inputs_md5": {
+    "/content/drive/MyDrive/FINN_SC/data/derived/finn_sc_records_2003_2025.csv.gz": "e6c3835410870ed797fb3981f85b3ebc",
+    "/content/drive/MyDrive/FINN_SC/data/inputs/SC_Municipios_2024.shp": "f338b049b19ea64c01f74c7f0e0e5be3",
+    "/content/drive/MyDrive/FINN_SC/config/config.yml": "a35f928c520e6a8d0101cdcbb9c14021",
+    "/content/drive/MyDrive/BRAIN_FINN_2019/BRAIN_output_urls.txt": "44507e44f8b1fac1532bfd395cee7f42"
+  },
+  "grid": {
+    "GDTYP": 7,
+    "P_ALP": 0.0,
+    "P_BET": 0.0,
+    "P_GAM": -54.857,
+    "XCENT": -54.857,
+    "YCENT": 0.0,
+    "XORIG": -105999.812,
+    "YORIG": -3507558.25,
+    "XCELL": 4000.0,
+    "YCELL": 4000.0,
+    "NCOLS": 233,
+    "NROWS": 243
+  },
+  "speciation": "finn2cmaq <= 2022-08-04 (BRAIN Table S3)",
+  "variables_read": [
+    "CO",
+    "NO",
+    "NO2",
+    "SO2",
+    "NH3",
+    "ECH4",
+    "POC",
+    "PEC",
+    "PSO4",
+    "PNO3",
+    "PMOTHR"
+  ],
+  "molar_mass": {
+    "CO": 28.01,
+    "NO": 30.01,
+    "NO2": 46.01,
+    "SO2": 64.07,
+    "NH3": 17.03,
+    "CH4": 16.04
+  },
+  "days_processed": 365,
+  "days_missing": [],
+  "time_profile": 210,
+  "layer_fractions_default": false,
+  "brain_over_finn_input": NaN,
+  "cells_touching_SC": 8036,
+  "cells_interior": 7188,
+  "pm_identities": {
+    "speciation": "finn2cmaq <= 2022-08-04 (BRAIN Table S3)",
+    "PSO4_over_PNO3_found": 9.692307705319347,
+    "PSO4_over_PNO3_expected": 9.692307692307693,
+    "species_sum_over_PM25": 0.9999999991359517,
+    "ok_ratio": true
+  },
+  "products": [
+    "FINN v2.5 MODIS",
+    "FINN v2.5 MODIS+VIIRS"
+  ]
+}

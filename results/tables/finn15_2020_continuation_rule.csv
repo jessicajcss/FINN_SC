@@ -1,0 +1,4 @@
+radius_km,continuations_with_same_day_detection,detections_with_continuation_and_next_day_detection,detections_without_continuation_with_next_day_detection,detections,continuations,detections_without_continuation
+1.0,0,0,167,2716,1893,823
+1.5,30,30,418,2716,1893,823
+2.0,42,42,437,2716,1893,823

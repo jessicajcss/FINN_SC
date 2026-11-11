@@ -1,0 +1,6 @@
+step,CO2_t,factor_vs_previous
+"FINN v1.5, all records",12883690.590852747,
+without next-day continuations,9399077.563095383,0.729533008947654
+number of detections as in v2.5 MODIS,9305640.48864635,0.990058910162003
+area per detection as in v2.5 MODIS,10783295.94963937,1.1587913763481281
+CO2 per km2 as in v2.5 MODIS (= FINN v2.5 MODIS),4563852.900813,0.4232335755345406

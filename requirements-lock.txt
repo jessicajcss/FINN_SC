@@ -1,0 +1,27 @@
+# Exact versions of the Python libraries used to produce the published results (run of
+# 2026-10-07), with Python 3.13.15 on Linux. Use this file to recreate that environment as closely as possible:
+#     python3.13 -m venv .venv-lock && . .venv-lock/bin/activate && pip install -r requirements-lock.txt
+# requirements.txt (lower bounds) is enough for normal use; see docs/reproducibility.md for a test with other versions.
+# System libraries of the published run: GDAL 3.12.4 and PROJ 9.8.1 (pyogrio and pyproj wheels).
+# R side of the published run: R 4.3.3, sf 1.0.15 (GEOS 3.12.1, GDAL 3.8.4, PROJ 9.4.0), spatstat.geom 3.2.8,
+# spatstat.explore 3.2.5, spatstat.random 3.2.2, ggplot2 3.4.4, yaml 2.3.8.
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+geopandas==1.2.0
+shapely==2.1.2
+pyproj==3.8.0
+pyogrio==0.13.0
+requests==2.34.2
+matplotlib==3.11.2
+pillow==12.3.0
+PyYAML==6.0.3
+libpysal==4.15.0
+spreg==1.9.1
+esda==2.10.0
+scikit-learn==1.9.1
+networkx==3.6.1
+mapclassify==2.11.0
+rasterio==1.5.2
+pymannkendall==1.4.3
+pytest==9.1.1
